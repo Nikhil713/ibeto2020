@@ -1,0 +1,71 @@
+html,body{
+    padding: 0%;
+    margin: 0%;
+}
+.white-background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.imagine-svg{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index: 10;
+}
+#imagine{
+    width: 85vw ;
+}
+.svg-container{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    z-index: 1;
+    opacity:0;
+}
+.scene-1-text{
+    position: absolute;
+    bottom:5vh; 
+    left:50%; 
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+}
+.scene-1-text p {
+    color: white;
+    font-size: 26px;
+    font-family: roboto;
+    font-weight: 400;
+    text-align: center;
+}
+
+#Comet_1{
+    transform: translateY(-150px);
+}
+#Comet_2{
+    transform: translateY(-150px);
+}
+#Comet_3{
+    transform: translateY(-150px);
+}
+#Comet_4{
+    transform: translateY(-150px);
+}
+#Comet_5{
+    transform: translateY(-150px);
+}
+
+#Orbit_of_brown_planet{
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+#Red_Planet_Path_20{
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
