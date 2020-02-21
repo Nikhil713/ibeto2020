@@ -1,0 +1,162 @@
+.scene-text{
+    position: absolute;
+    bottom:3vh; 
+    left:50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+    font-size: 40px;
+    display: block;
+    width:90%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* ---------------------------------SCENE-1--------------------------------------------------------------- */
+
+.scene-1{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+}
+.scene-1 .scene-text{
+    opacity:0;
+    z-index: 8;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(3, 54, 18), 0 0 5px rgb(0, 255, 64)
+}
+.white-background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.imagine-container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index: 7;
+}
+#imagine{
+    width: 85vw ;
+}
+.night-sky-container{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    z-index: 1;
+    opacity:0;
+}
+
+#Stars path{
+    transform-origin: center center;
+}
+
+/* -----------------------------------SCENE-2---------------------------------------------------------- */
+
+.scene-2{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    opacity: 0;
+}
+
+
+.scene-2 .scene-text{
+    opacity:0;
+    z-index: 18;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.believe-container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index: 15;
+}
+.underwater-container{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    opacity:1;
+}
+#believe{
+    width: 85vw ;
+}
+
+/* -----------------------------------SCENE-3---------------------------------------------------------- */
+.scene-3{
+    position: absolute;
+    top:100vh;
+    bottom:0; 
+    left:0; 
+    right:0;
+    overflow: hidden;
+}
+.scene-3 .scene-text{
+    opacity:0;
+    z-index: 28;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 191), 0 0 5px rgb(139, 0, 12);
+}
+.achieve-container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index: 28;
+    opacity:0
+}
+
+.svg-container-stroke{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 21;
+    opacity:1;
+}
+
+.svg-container-fill{
+    position: absolute;
+    top:0;
+    bottom:0; 
+    left:0; 
+    right:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 25;
+    opacity:0;
+}
+
+#achieve{
+    width: 85vw ;
+}
+
+#Light-1,#Light-2,#Light-3,#Light-4 {
+    transform-origin: bottom;
+}
+
+#BACKGROUND-3a{
+    opacity: 1;
+}
+
+#OBJECTS>path, .CITY-STROKE-3{
+    opacity: 0;
+}

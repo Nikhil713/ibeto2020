@@ -1,0 +1,30 @@
+<svg id="believe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.78 83.98">
+            <filter id="displacementFilter1">
+                <feTurbulence class="turbulence-1" type="turbulence" baseFrequency="0.04" numOctaves="3" result="turbulence" />
+                <feDisplacementMap class="displacementmap-1" in2="turbulence" in="SourceGraphic" scale="15" xChannelSelector="R" yChannelSelector="G" />
+            </filter> 
+            <defs><style>.believe-fill{fill:#051a37;filter:url(#displacementFilter1);transform-origin: center;    
+            }</style>
+           
+        </defs>
+
+
+
+ <svg id="underwater" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 753.61 503.29" height="100%" width="100%" preserveAspectRatio="xMidYMid slice">
+        <filter id="displacementFilter2">
+            <feTurbulence class="turbulence-2" type="turbulence" baseFrequency="0.03" numOctaves="1" result="turbulence" />
+            <feDisplacementMap class="displacementmap-2" in2="turbulence" in="SourceGraphic" scale="7" xChannelSelector="B" yChannelSelector="B" />
+        </filter> 
+        <defs>
+          <style>
+              .cls-1{fill:none;}
+              .cls-2{clip-path:url(#clip-path);}
+              .cls-3{fill:url(#linear-gradient);}
+              .cls-4{opacity:0.9;}
+              .cls-5{fill:url(#radial-gradient);}
+              .cls-6{fill:#49b4ce;filter:url(#displacementFilter2);transform-origin: center;}
+              .cls-7{fill:#109cbf;}
+              .cls-8{opacity:0.3;filter:url(#displacementFilter2);transform-origin: center;}
+              .cls-9{fill:#fff;}
+              .cls-10{fill:#0771af;filter:url(#displacementFilter2);transform-origin: center;}
+              .cls-11{fill:#00598e;filter:url(#displacementFilter2);transform-origin: center;}       
