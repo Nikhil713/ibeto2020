@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#2f856b">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+        <title>IBeTo | Excel 2019</title>
+
+        <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138249337-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138249337-1');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="fullpage">
+    <div id="sections-container">
+        <div id="landingSection" class="section section-0" style="padding:0;">
+            <iframe style="width: 100vw;height: 100vh;border: none;" src="animation.html"></iframe>
+        </div>
+        <div class="parallelogram"></div>
+        <!--<div class="triangle-corner"></div>-->
+        <div class="content">
+        <div style="margin:0; height:100vh; max-width: 100vw;">
+                    <!--NAVBAR -->
+                    <button class="nav-tgl" type="button" aria-label="toggle menu"><!-- this span just for the three dividers in the hamburger button--><span aria-hidden="true"></span></button>
+                    <nav class="nav">
+                        <ul class="nav-toggle nav-ul">
+                            <li id="landing" onclick="scrollToSection(this.id, 0)">Home</li>
+                            <li id="aboutUs" onclick="scrollToSection(this.id, 1)">About Us</li>
+                            <li id="eventFormat" onclick="scrollToSection(this.id, 2)">Event Format</li>
+                            <li id="problemStatements" onclick="scrollToSection(this.id, 3)">Problem Statements</li>
+                            <li id="reward" onclick="scrollToSection(this.id, 4)">Rewards</li>
+                            <li id="timeline" onclick="scrollToSection(this.id, 5)">TimeLine</li>
+                            <li id="ibetoJunior" onclick="scrollToSection(this.id, 6)">IBeTo Junior</li>
+                            <li id="contact" onclick="scrollToSection(this.id, 7)">Contacts</li>
+                        </ul>
+                    </nav>
+                    <div id="bufferspace"></div>
+                    
+                    <!--ABOUT US -->
+                    <div id="aboutUsSection" class="section section-1">
+                        <div  class="matrix"></div>
+                        <div class="section-content about-container">
+                            <div class="image-container animate1">
+                                <img src="img/ibeto logo.png" />
+                            </div> 
+                            <div class="section-text">
+                                    <div class="left-side-wrapper">
+                                        <div class="triangle-small-p"></div>
+                                    </div>
+                                    <h1 class="animate1">About </h1>
+                                    <p class="animate1"><b>Innovations for a Better Tomorrow (IBeTo)</b> is the flagship event of EXCEL. It is a national level pursuit for socially relevant and technologically innovative ideas with the potential to trigger the next big social change. IBeTo gives the right platform and mentorship to launch the most technically innovative and revolutionary ideas and to develop them into a final product.
+
+
+                                    </p>
+                                    <div class="right-bottom-wrapper">
+                                        <div class="triangle-small-p-bottom"></div>
+                                    </div> 
+                            <!--<div id="rectangle-wrap">
+                                <div id="rect1"></div>
+                                <div id="rect2"></div>
+                                <div id="rect3"></div>
+                                <div id="rect4"></div>
+                            </div>-->
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                     <!-- EVENT FORMAT -->
+                     <div id="eventFormatSection" class="section section-2">
+                            <div class="section-content" style="margin-top:-6em;">
+                                <h1 class="center-text animate2">Event Format</h1>
+                                <div class="event-container animate2">
+                                    <div class="event-card">
+                                        <img alt="ideate" src="img/ideate.png" />
+                                        <div class="event-card-info">Ideate
+                                            <p style="font-size:1rem;">Participants will submit their <b>ideas</b> and their choice of problem statement with solution. <b>60 teams</b> will be shortlisted and asked to send a detailed abstract.</p>
+                                        </div>
+                                    </div>
+                                    <div class="event-card">
+                                        <img alt="create" src="img/create.png"/>
+                                        <div class="event-card-info">Create
+                                            <p style="font-size:1rem;"><b>20 teams</b> shortlisted into the quarterfinals will be asked to send in their project plans and assigned mentors to whom the teams are to report to.</p>
+                                        </div>
+                                    </div>
+                                    <div class="event-card">
+                                        <img alt="showcase" src="img/showcase.png"/> 
+                                        <div class="event-card-info">Showcase
+                                            <p style="font-size:1rem;">The <b>20 teams</b> should present their working prototype in front of the judges at the event finals, on <b>Day 0 of Excel 2019</b>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                    <!--PROBLEM STATEMENTS -->
+                    <div id="problemStatementsSection" class="section section-3">
+                        <div class="section-content problem-container">
+                                <div class="image-container animate3">
+                                        <img src="img/statement.png"/>
+                                </div>
+                                <div class="section-text">
+                                    <h1 class="animate3">Problem Statements</h1>
+                                    <p class="animate3">IBeTo 2019 will endeavour to create lasting solutions for the following problem statements and herald a better tomorrow : </p>
+                                    <ul class="animate3">
+                                        <li>FinTech</li>
+                                        <li>Improving Governance </li>
+                                        <li>Project: Rebuild Kerala</li>
+                                        <li>Citizen Safety</li>
+                                        <li>Revolutionising Energy and Cleantech</li>
+                                        <li>Any other socially relevant problem statement</li>
+                                    </ul>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSetgfYgWyGg8LalbNIcMhIL-OOE1EM6LsCTAttg1CBumtpc1g/viewform?usp=sf_link" target="_blank"  class="button animate3" style="background-color:#f14e4e">Register</a>
+                                    <a href="img/IBeTo 2019 _ Event General Rules & Format.pdf" download class="button animate3" style="background-color:#f1bb4e">Rules</a>        
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div id="rewardSection" class="section section-4">
+                        <div class="box animate4">
+                        <div class="section-content rewards-container">    
+                        <div class="section-text">
+                            <h1 class="animate4" style="text-align: center">Rewards</h1>
+                            <p class="animate4">
+                                <ul>
+                                    <li>The best projects will be awarded cash prizes worth INR 1,00,000/- </li>
+                                    <li>Top 3 teams will get a direct entry into the final round of the ‘Idea Fest’ competition by KSUM.</li>
+                                    <li>Selected teams will get a chance to receive incubation & office space by InQ.</li>
+                                    <li>Certificate of Participation will be awarded, signed by the concerned authorities.</li>
+                                    <li>As per KTU regulations, socially relevant projects will be given 50 activity points.</li>
+                                </ul>
+
+                            </p>
+                        </div>
+                        <div class="image-container animate4" >
+                            <img src="img/prize.png"/>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                            
+                    <div id="timelineSection" class="section section-5" >
+                        <div class="section-content  animate5">
+                            <h1 class="animate5" style="text-align: center">TimeLine</h1>
+                            <img alt="timeline" src="img/timelinex.png" />
+                            <div class="timeline-container ">
+
+                                <div class="timeline-block timeline-block-right">
+                                   <div class="marker"></div>
+                                   <div class="timeline-content">
+                                      <h3>9 April 2019</h3>
+                                      <span>IBeTo Launch</span>
+                                   </div>
+                                </div>
+                             
+                                <div class="timeline-block timeline-block-left">
+                                   <div class="marker"></div>
+                                   <div class="timeline-content">
+                                      <h3>12 May 2019</h3>
+                                      <span>Idea submission deadline</span>
+                                   </div>
+                                </div>
+                             
+                                <div class="timeline-block timeline-block-right">
+                                   <div class="marker"></div>
+                                   <div class="timeline-content">
+                                      <h3>17 May 2019</h3>
+                                      <span>Announcement of shortlisted teams</span>
+                                   </div>
+                                </div>
+                             
+                                <div class="timeline-block timeline-block-left">
+                                   <div class="marker"></div>
+                                   <div class="timeline-content">
+                                      <h3>9 June 2019</h3>
+                                      <span>Detailed abstract submission</span>
+                                   </div>
+                                </div>
+                             
+                                <div class="timeline-block timeline-block-right">
+                                   <div class="marker"></div>
+                                   <div class="timeline-content">
+                                      <h3>20 June 2019</h3>
+                                      <span>Announcement of shortlisted teams.</span>
+                                   </div>
+                                </div>
+                                <div class="timeline-block timeline-block-left">
+                                    <div class="marker"></div>
+                                    <div class="timeline-content">
+                                       <h3>June to September 2019</h3>
+                                       <span>Prototype Development & Report Submissions</span>
+                                    </div>
+                                 </div>
+                              
+                                 <div class="timeline-block timeline-block-right">
+                                    <div class="marker"></div>
+                                    <div class="timeline-content">
+                                       <h3>29 Sept 2019</h3>
+                                       <span>Final Report submission. Video proof of working prototype.</span>
+                                    </div>
+                                 </div>
+                                 <div class="timeline-block timeline-block-left">
+                                    <div class="marker"></div>
+                                    <div class="timeline-content">
+                                       <h3>October</h3>
+                                       <span>Excel Day - Final presentation</span>
+                                    </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div id="ibetoJuniorSection" class="section section-6" >
+                            <div class="section-content animate6">
+                            <h1>IBeTo Jr.</h1>
+                            <h2>Coming Soon</h2>
+                            
+                        </div>
+                        </div>
+
+                        <!-- Sponsors -->
+                    <div class="sponsor" style="background-color: white">
+                        <div class="section-content">
+                                <h1 class="animate1" style="text-align: center;">Associating Partners</h1>
+                                <div class="sponsor-container">
+                                        <div class="title-sponsor">
+                                              <img src="img/Kerala Startup Mission Logo.png" alt="Kerala Startup Mission" />
+                                        </div>
+                                        <div class="title-sponsor" style="padding-top:10px;" >
+                                                <img src="img/inQ_Logo-Final.png" style="height:60%;"alt="inQ" />
+                                        </div>
+                                        <div class="title-sponsor geojit">
+                                                <img src="img/geojit.png" style="height:100%;width:75%;"alt="Geojit" />
+                                          </div>
+        
+                                    </div>
+                        </div>
+                    </div>
+        
+                    <div id="contactSection" class="section section-7" style="background-color: white">
+                        <div class="section-content">
+                            <h1 class="animate7">Contacts</h1>
+                            <div class="contact-cards-group">
+                                <div class="contact-card animate7">
+                                    <img class="contact-img" src="img/shehzin.jpeg">
+                                    <div class="contact-dets">
+                                        <div>Shehzin Shajahan</div>
+                                        <div>Chairman</div>
+                                        <div>Excel 2019</div>
+                                        <div><a target="_blank" class="contact-mail" href="mailto:shehzincs@excelmec.org"><i class="fa fa-envelope"></i> shehzincs@excelmec.org</a></div>
+                                        <div><a target="_blank" class="contact-tel" href="tel:+919847789993"><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +91 98477 89993</a></div>
+                                    </div>
+                                </div>
+                                <div class="contact-card animate7">
+                                    <img class="contact-img" src="img/akhil_abraham.jpeg">
+                                    <div class="contact-dets">
+                                        <div>Akhil Abraham</div>
+                                        <div>General Secretary</div>
+                                        <div>Excel 2019</div>
+                                        <div><a target="_blank" class="contact-mail" href="mailto:akhilabraham@excelmec.org"><i class="fa fa-envelope"></i> akhilabraham@excelmec.org</a></div>
+                                        <div><a target="_blank" class="contact-tel" href="tel:+919061128759"><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +91 90611 28759</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-cards-group">
+                                <div class="contact-card animate7">
+                                    <img class="contact-img" src="img/sharat_kurup.jpeg">
+                                    <div class="contact-dets">
+                                        <div>Sharat Kurup </div>
+                                        <div>Joint Secretary</div>
+                                        <div>Excel 2019</div>
+                                        <div><a target="_blank" class="contact-mail" href="mailto:sharat@excelmec.org"><i class="fa fa-envelope"></i> sharat@excelmec.org</a></div>
+                                        <div><a target="_blank" class="contact-tel" href="tel:+919717950672"><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +91 97179 50672</a></div>
+                                    </div>
+                                </div>
+                                <div class="contact-card animate7">
+                                    <img class="contact-img" src="img/bhairavi.jpeg">
+                                    <div class="contact-dets">
+                                        <div>Bhairavi Sameer Shah</div>
+                                        <div>Social Initiatives Manager</div>
+                                        <div>Excel 2019</div>
+                                        <div><a target="_blank" class="contact-mail" href="mailto:bhairavi@excelmec.org"><i class="fa fa-envelope"></i> bhairavi@excelmec.org</a></div>
+                                        <div><a target="_blank" class="contact-tel" href="tel:+919061344877"><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +91 90613 44877</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <footer class="section section-8 flex-rw" style="min-height:auto ; margin:0; padding:0">
+                        
+                        <!--<div class="footer-social-section flex-rw">
+                            <span class="footer-social-overlap footer-social-connect">
+                            CONNECT <span class="footer-social-small">with</span> US
+                            </span>
+                            <span class="footer-social-overlap footer-social-icons-wrapper">
+                            <a href="https://www.facebook.com/excelmec/" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/excelmec/?hl=en" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/user/excelmec" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                            <a href="https://twitter.com/excelmec?lang=en" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                            </span>
+                        </div>
+                        -->
+                        <div class="footerDiv">
+                            <div class="footerIbeto">
+                                <a href="http://www.mec.ac.in/">
+                                    <img src="img/Copy of mec_logo.png">
+                                </a>
+                
+                            </div>
+                            <div class="icon1">
+                                <a href="//twitter.com/excelmec?lang=en">
+                                    <img src="img/tweet.svg">
+                
+                                </a>
+                            </div>
+                            <div class="icon2">
+                                <a href="//www.facebook.com/excelmec/">
+                                    <img src="img/fb.svg">
+                                </a>
+                            </div>
+                            <div class="icon3">
+                                <a href="//www.instagram.com/excelmec/?hl=en">
+                                    <img src="img/instagram (2).png">
+                                </a>
+                            </div>
+                            <div class="footerExcel">
+                                <a href="//excelmec.org">
+                                    <img src="img/excel 2019.png">
+                                </a>
+                            </div>
+                            <div class="Excelbrand">
+                                <span>Made with <i class="far fa-heart" style="color:coral;"></i> Excel 2019</span>
+                            </div>
+                        </div>
+                    </footer>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="scripts/fullpage.js?v=1.0"></script>
+    <script src="scripts/index.js?v=1.0"></script>
+</body>
+
+</html>
