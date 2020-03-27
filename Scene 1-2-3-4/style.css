@@ -282,6 +282,8 @@
     left:0; 
     right:0;
     opacity: 0;
+    background-image:url('BackGround\ Scene\ 4.svg');
+    background-size: cover;
 }
 
 .ibeto-logo{
