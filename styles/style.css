@@ -284,14 +284,17 @@
     opacity: 0;
     background-image:url('../assets/BackGround\ Scene\ 4.svg');
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ibeto-logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-22%,-50%);
     opacity: 0;
+}
+
+.ibeto-logo >img {
+    max-width: 20vw;
 }
 
 
@@ -304,4 +307,7 @@
         font-size: 25px;
     }
 
+    .ibeto-logo >img {
+        max-width: 50vw;
+    }
 }
