@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+
+.landing{
+    width:100vw;
+    height:100vh;
+}
 .scene-text{
     position: absolute;
     bottom:3vh; 
