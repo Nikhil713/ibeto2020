@@ -18,7 +18,7 @@ h1{
   position:relative;
   width:0.5vw;
   margin:0 auto;
-  padding-top:6em;
+  padding-top:8em;
   background:#fff;
   word-wrap:break-word;
 }
@@ -100,11 +100,11 @@ h1{
 }
  
 .timeline ul li:nth-child(odd) div {
-  transform: translate3d(50vw,0,0);
+  transform: translate3d(26vw,0,0);
 }
  
 .timeline ul li:nth-child(even) div {
-  transform: translate3d(-50vw,0,0);
+  transform: translate3d(-26vw,0,0);
 }
  
 .timeline ul li.in-view div {
@@ -114,7 +114,7 @@ h1{
 }
 
 
-/*-------------------------------------------------*/
+/*--------------------REMOVE THIS-----------------------------*/
 .timeline2{
   background-color:#1a1a1d;
   color:#f2f2f2;
