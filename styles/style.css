@@ -112,16 +112,3 @@ body{
     text-decoration: none;
     }
 
-            /* MEDIA QUERIES */
-
-
-@media only screen and (max-width: 500px) {
-
-    .scene-text{
-        font-size: 25px;
-    }
-
-    .ibeto-logo >img {
-        max-width: 50vw;
-    }
-}
