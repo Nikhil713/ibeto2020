@@ -588,6 +588,9 @@ body {
     margin-top: 10%;
 }
 
+.rewards-trophy{
+    display: none;
+}
 .rewards-desc{
     display: flex;
     /* justify-content: center; */
@@ -829,7 +832,44 @@ body {
         justify-content: center;
     }
 
-    
+    .rewards{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .rewards-left{
+        display: none;
+    }
+
+    .rewards-right{
+        width: 100%;
+    }
+
+    .reward-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .rewards-trophy{
+        display: flex;
+        width: 60vw;
+        height: 40vw;
+        margin-top: 10%;
+    }
+    .reward-header > a{
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 10vw;
+    }
+
+    .rewards-desc >ul >li{
+        font-size: 1.25rem;
+    }
 }
 
 
@@ -945,5 +985,47 @@ body {
 
     .ps-desc{
         width: 80%;
+    }
+
+    .rewards{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .rewards-left{
+        display: none;
+    }
+
+    .rewards-right{
+        width: 100%;
+    }
+
+    .reward-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .rewards-trophy{
+        display: flex;
+        width: 35vw;
+        height: 40vw;
+        margin-top: 4%;
+    }
+    .reward-header > a{
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 5vw;
+    }
+
+    .rewards-desc{
+        margin-top: 5%;
+    }
+    .rewards-desc >ul >li{
+        font-size: 1.25rem;
     }
 }
