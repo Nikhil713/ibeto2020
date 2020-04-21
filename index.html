@@ -4193,20 +4193,11 @@
     </div>
     <div class="about" id="about-wrapper">
         <div class="about-header">
-            <div class="about-head">
+            <div class="about-header-div">
                 <div class="triangle1"></div>
-                <a>ABOUT</a>
+                <a class="about-head">ABOUT</a>
                 <div class="triangle2"></div>
             </div>
-            <!-- <div class="robot"><img src="./assets/robot.jpg"></div> -->
-            <!-- <div class="about-anim">
-                <div class="load">
-                    <hr />
-                    <hr />
-                    <hr />
-                    <hr />
-                </div>
-            </div> -->
         </div>
         <div class="about-container">
             <div class="image-container">
@@ -4215,13 +4206,13 @@
             <div class="line"></div>
             <div class="about-text">
                 <!-- <div class="triangle3"></div> -->
-                <div class="slide-right">
+                
                     <p><b>Innovations for a Better Tomorrow (IBeTo)</b> is the flagship event of EXCEL. It is a national
                         level pursuit for socially relevant and technologically innovative ideas with the potential to
                         trigger the next big social change. IBeTo gives the right platform and mentorship to launch the
                         most
                         technically innovative and revolutionary ideas and to develop them into a final product.</p>
-                </div>
+                
                 <!-- <div class="triangle4"></div> -->
             </div>
         </div>
@@ -4261,27 +4252,28 @@
                     <div class="ps-buttons">
                         <div class="button_cont" style="text-align:center"><a class="example_e" href="add-website-here"
                                 target="_blank" rel="nofollow noopener">RULES</a></div>
-                        <div class="button_cont" style="text-align:center"><a class="example_e" href="add-website-here"
-                                target="_blank" rel="nofollow noopener"  onmouseover="changeImage()" onmouseout="changeBack()" >REGISTER</a></div>
+                        <div class="button_cont1" style="text-align:center"><a class="example_e" href="add-website-here"
+                                target="_blank" rel="nofollow noopener" onmouseover="changeImage()"
+                                onmouseout="changeBack()">REGISTER</a></div>
                     </div>
                 </div>
                 <div class="ps-img">
-                    <img id="myImage" src="./assets/pic_bulboff.gif" width="100" height="180">
+                    <img id="myImage" src="./assets/pic_bulboff.gif" width="100" height="180" class="shadowfilter">
 
 
                     <script>
                         function changeImage() {
                             var image = document.getElementById('myImage');
-                        
-                                image.src = "./assets/pic_bulbon.gif";
-                            
+
+                            image.src = "./assets/pic_bulbon.gif";
+
                         }
 
                         function changeBack() {
-                           
+
                             var image = document.getElementById('myImage');
-                                image.src = "./assets/pic_bulboff.gif";
-                            
+                            image.src = "./assets/pic_bulboff.gif";
+
                         }
 
                     </script>
@@ -4295,7 +4287,11 @@
         REWARDS
     </div>
     <div class="timeline_container">
-        TIMELINE
+        <div class="timeline-header">
+            <div class="triangle3"></div>
+            <a>TIMELINE</a>
+            <div class="triangle4"></div>
+        </div>
         <section class="timeline">
             <ul>
                 <li>
