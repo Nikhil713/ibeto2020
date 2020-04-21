@@ -300,7 +300,7 @@
 @media only screen and (max-width: 500px) {
 
     .scene-text{
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .ibeto-logo >img {
@@ -308,3 +308,10 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+
+    .landing
+    .ibeto-logo >img {
+        max-width: 30vw;
+    }
+}
