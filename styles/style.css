@@ -368,6 +368,7 @@ body {
 .button_cont {
     margin-left: 5%;
     margin-bottom: 6%;
+    cursor: pointer;
 }
 
 .shadowfilter {
@@ -818,15 +819,18 @@ body {
         margin-left: 0%;
         display: flex;
         justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .button_cont{
         margin-left: 0%;
+        margin-bottom: 0%;
+        /* width: auto; */
        
     }
     .ps-anim-button{
         font-size: 1rem;
-        width:3rem;
+        width:auto;
         height:1rem;
         display: flex;
         justify-content: center;
@@ -910,6 +914,14 @@ body {
 
     .ps-list>ul>li{
         font-size: 1rem;
+    }
+
+    .rewards-trophy{
+        margin-top: 0%;
+    }
+
+    .rewards-desc > ul > li {
+        font-size: 1.1rem;
     }
 }
 
@@ -1025,6 +1037,15 @@ body {
     .rewards-desc{
         margin-top: 5%;
     }
+
+    .rewards-desc > ul > li {
+        margin: 2%;
+    }
+
+    .rewards-desc > ul > li{
+        margin: 0%;
+    }
+
     .rewards-desc >ul >li{
         font-size: 1.25rem;
     }
