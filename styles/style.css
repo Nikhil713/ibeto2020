@@ -995,6 +995,11 @@ body {
         width: 90vw;
     }
 
+    .ps-header{
+        display: flex;
+        justify-content: center;
+        font-size: 7vw;
+    }
     .ps-desc{
         width: 80%;
     }
@@ -1003,7 +1008,7 @@ body {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        background-color: white;
+        background-color: whitesmoke;
     }
 
     .rewards-left{
@@ -1019,31 +1024,27 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .rewards-trophy{
         display: flex;
         width: 35vw;
         height: 40vw;
-        margin-top: 4%;
+        margin-top: 10%;
     }
     .reward-header > a{
         margin-top: 0%;
         margin-left: 0%;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .rewards-desc{
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .rewards-desc > ul > li {
-        margin: 2%;
-    }
-
-    .rewards-desc > ul > li{
-        margin: 0%;
+        margin: 4%;
     }
 
     .rewards-desc >ul >li{
