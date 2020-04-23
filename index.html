@@ -3,15 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Ibeto</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/animation.css">
-    <link rel="stylesheet" href="./styles/timeline.css">
+    <!-- <link rel="stylesheet" href="./styles/animation.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/timeline.css"> -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="./scripts/anime.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/timeline.js"></script>
 </head>
 
 <body>
-    <div class="landing">
+    <!-- <div class="landing">
         <div class="scene-1">
             <div class="white-background">
                 <div class="imagine-container">
@@ -4190,8 +4199,8 @@
                 <img src="./assets/ibeto logo.png" alt="ibeto-logo">
             </div>
         </div>
-    </div>
-    <div class="about" id="about-wrapper">
+    </div> -->
+    <!-- <div class="about" id="about-wrapper">
         <div class="about-header">
             <div class="about-header-div">
                 <div class="triangle1"></div>
@@ -4205,33 +4214,73 @@
             </div>
             <div class="line"></div>
             <div class="about-text">
-                <!-- <div class="triangle3"></div> -->
 
                 <p><b>Innovations for a Better Tomorrow (IBeTo)</b> is the flagship event of EXCEL. It is a national
                     level pursuit for socially relevant and technologically innovative ideas with the potential to
                     trigger the next big social change. IBeTo gives the right platform and mentorship to launch the
                     most
                     technically innovative and revolutionary ideas and to develop them into a final product.</p>
-
-                <!-- <div class="triangle4"></div> -->
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- <div class="about">
-        <a style=" margin-top:1%;margin-left:6%;font-size: 4vw; color: white;">ABOUT</a>
-        <div class="about-container">
-            <div class="logo"><img src="./assets/ibeto logo.png"></div>
-            <div class="desc">Innovations for a Better Tomorrow (IBeTo) is the flagship event of EXCEL. It is a national level pursuit for socially relevant and technologically innovative ideas with the potential to trigger the next big social change. IBeTo gives the right platform and mentorship to launch the most technically innovative and revolutionary ideas and to develop them into a final product. </div>    
+    <section id = "event-format">
+        <div class="container my-3 py-5 text-center">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1> Event Format</h1>
+                    <br>
+                    <p class="mt-3">This is the event format for ibeto 2020</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/ideate.png" alt="ideate" class="img-fluid rounded-circle w-50 mb-3">
+                            <br><br>
+                            <h3> IDEATE</h3>
+                            <br><br>
+                            <h5> PHASE 1</h5>
+                            <br><br>
+                            <p>Participants will submit their ideas and their choice of problem statement with solution. 60 teams will be shortlisted and asked to send a detailed abstract.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/create.jpg" alt="create" class="img-fluid rounded-circle w-50 mb-3">
+                            <br><br>
+                            <h3>CREATE</h3>
+                            <br><br>
+                            <h5> PHASE 2</h5>
+                            <br><br>
+                            <p>20 teams shortlisted into the quarterfinals will be asked to send in their project plans and assigned mentors to whom the teams are to report to.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/showcase1.jpg" alt="showcase" class="img-fluid rounded-circle w-50 mb-3">
+                            <br><br>
+                            <h3>SHOWCASE</h3>
+                            <br><br>
+                            <h5>PHASE 3</h5>
+                            <br><br>
+                            <p>20 teams shortlisted into the quarterfinals will be asked to send in their project plans and assigned mentors to whom the teams are to report to.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
-    <!-- <div class="event-format" style="border: 1px solid;">
-        EVENT FORMAT
-    </div> -->
-    <!-- <div class="event-format" style="border: 1px solid;">
-        PROBLEM STATEMENTS
-    </div> -->
-    <div class="ps">
+
+    </div>
+    <!-- <div class="ps">
         <div class="ps-container">
             <div class="ps-header">
                 <a>PROBLEM STATEMENTS</a>
@@ -4282,13 +4331,13 @@
             </div>
 
         </div>
-    </div>
-    <div class="rewards" >
+    </div> -->
+    <!-- <div class="rewards" >
         <div class="rewards-left">
             <div class='wrapper'>
                 <div class='glow'></div>
                 <div class='mask'>
-                  <div class='container'>
+                  <div class='trophy-container'>
                     <div class='star'>&#10022;</div>
                     <div class='main'></div>
                     <div class='stem1'></div>
@@ -4317,12 +4366,10 @@
             </div>
         </div>
         
-    </div>
-    <div class="timeline_container">
+    </div> -->
+    <!-- <div class="timeline_container">
         <div class="timeline-header">
-            <!-- <div class="triangle3"></div> -->
             <a>TIMELINE</a>
-            <!-- <div class="triangle4"></div> -->
         </div>
         <section class="timeline">
             <ul>
@@ -4376,11 +4423,11 @@
                 </li>
             </ul>
         </section>
-    </div>
-    <div class="event-format" style="border: 1px solid;">
+    </div> -->
+    <!-- <div class="#event-format" style="border: 1px solid;">
         IBETO Jr.
-    </div>
-    <div class="sponsor" style="background-color: white">
+    </div> -->
+    <!-- <div class="sponsor" style="background-color: white">
         <div class="section-content">
             <h1 class="animate1" style="text-align: center;">Associating Partners</h1>
             <div class="sponsor-container">
@@ -4396,9 +4443,9 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="contactSection" class="section section-7" style="background-color: white">
+    <!-- <div id="contactSection" class="section section-7" style="background-color: white">
         <div class="section-content">
             <h1 class="animate7">Contacts</h1>
             <div class="contact-cards-group">
@@ -4450,14 +4497,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="event-format" style="height:30vh; border: 1px solid;">
+    </div> -->
+    <!-- <div class="event-format" style="height:30vh; border: 1px solid;">
         FOOTER
-    </div>
+    </div> -->
 
-    <script src="./scripts/anime.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/timeline.js"></script>
 </body>
 
 </html>
