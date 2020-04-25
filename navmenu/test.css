@@ -1,3 +1,19 @@
+
+/*for test*/
+
+.test{
+  background-color:#1a1a1d;
+  color:#f2f2f2;
+  width:100vw;
+  height:100vh;
+  text-align:center;
+  font-size:10vw;
+  box-sizing: border-box;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
@@ -5,16 +21,19 @@
   font-size: 100%;
   line-height: 1.5;
 }
+body {
+    background-image: url(fondo2.jpg);
+    margin: 0;
+    background-size: cover;
+}
 nav {
-  --duration: .1s;
+  --duration: .2s;
   --easing: ease-in-out;
-  /*position: relative;    now*/
+  position: fixed;
   width: 220px;
   margin: 20px;
-  
-  position:fixed;
-  z-index: 100;
-
+  z-index:10;
+  right:0;
 }
 nav ol {
   list-style-type: none;
@@ -38,7 +57,6 @@ nav a {
 nav a:hover {
   background: #efefef;
 }
-
 nav .sub-menu a {
   font-size: .9em;
   color: #666666;
@@ -46,11 +64,10 @@ nav .sub-menu a {
   padding: .75em;
   background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
 }
-
 nav .sub-menu a:hover {
   background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
-}
 
+}
 nav header {
   font-weight: 600;
   display: block;
@@ -60,7 +77,7 @@ nav header {
   transition-delay: var(--delay-out);
   border-radius: 4px;
   padding: 1em 1.52em;
-  }
+}
 nav header span {
   border: none;
   background: transparent;
@@ -73,7 +90,6 @@ nav header span {
 nav footer button {
   position: absolute;
   top: 0;
-  left: 0;
   border: none;
   padding: calc(1em - 2px);
   width: 100%;
@@ -87,42 +103,11 @@ nav footer button {
 }
 nav.closed a,
 nav.closed header {
-  transform: translateY(calc(var(--top) * -1)) scaleY(0.1) scaleX(0.2);
+  transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left) * -1)) scaleY(0.1) scaleX(0.2);
   transition-delay: var(--delay-in);
   color: transparent;
 }
 nav.closed footer button {
   transition-delay: 0s;
-  transform: scaleY(0.7) scaleX(0.2);
-  z-index: 1000;
-}
-
-@keyframes new
-{
-  0%
-  {
-    transform:scaleX(1);
-  }
-  50%
-  {
-    transform:scaleX(.95);
-  }
-  100%
-  {
-    transform:scaleX(1);
-  }
-}
-
-
-
-/*for test*/
-
-.test{
-  background-color:#1a1a1d;
-  color:#f2f2f2;
-  width:100vw;
-  height:100vh;
-  text-align:center;
-  font-size:10vw;
-  box-sizing: border-box;
+  transform: scaleY(0.7) scaleX(1.2);
 }
