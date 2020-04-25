@@ -27,7 +27,7 @@ body {
     background-size: cover;
 }
 nav {
-  --duration: .5s;
+  --duration: .2s;
   --easing: ease-in-out;
   position: fixed;
   width: 220px;
@@ -110,20 +110,4 @@ nav.closed header {
 nav.closed footer button {
   transition-delay: 0s;
   transform: scaleY(0.7) scaleX(1.2);
-}
-
-@keyframes new
-{
-  0%
-  {
-    transform:scaleX(1);
-  }
-  50%
-  {
-    transform:scaleX(.95);
-  }
-  100%
-  {
-    transform:scaleX(1);
-  }
 }

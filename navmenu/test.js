@@ -25,4 +25,15 @@ var $els = $('.menu a, .menu header');
             e.stopPropagation();
         });
 
+
+        $( document ).ready(function() {
+          $els.each(function(j){
+            $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
+            $(this).css('--delay-in',-1+'s');
+            $(this).css('--delay-out',-1+'s');
+            $(this).css('--left',$(this)[0].getBoundingClientRect().left + (-1800));
+        });
+        $('.menu').toggleClass('closed');
+        e.stopPropagation();
+      });
         
