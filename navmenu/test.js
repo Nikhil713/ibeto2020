@@ -19,7 +19,7 @@ var $els = $('.menu a, .menu header');
                 $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
                 $(this).css('--delay-in',j*.1+'s');
                 $(this).css('--delay-out',(count-j)*.1+'s');
-                $(this).css('--left',$(this)[0].getBoundingClientRect().left + (-1800));
+                $(this).css('--left',$(this)[0].getBoundingClientRect().left + ($(this).offset().right));
             });
             $('.menu').toggleClass('closed');
             e.stopPropagation();
