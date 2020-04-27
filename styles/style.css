@@ -222,29 +222,33 @@ section {
     padding: 1rem 0;
 }
 
+.problem-statements-buttons a {
+    margin-left: 1rem;
+}
+
 .problem-statements-buttons div {
     padding: 1rem;
     margin: 0 1rem;
     min-width: 7rem;
     height: max-content;
-    text-align: center;
     border-radius: 4px;
-    box-shadow: 1px 1px 10px #000000aa;
     transition-duration: 0.3s;
 }
 
 .problem-statements-register {
-    background-color: #4ebbe3;
+    background-color: #4e71e3;
+    box-shadow: 1px 1px 10px #4e71e3aa;
 }
 
 .problem-statements-register:hover {
-    background-color: #4e71e3;
-    box-shadow: 5px 5px 20px #4e71e3bb;
+    background-color: #4ebbe3;
+    box-shadow: 5px 5px 20px #4ebbe3bb;
     transform: scale(1.1);
 }
 
 .problem-statements-rules {
     background-color: #db2523;
+    box-shadow: 1px 1px 10px #db2523aa;
 }
 
 .problem-statements-rules:hover {
@@ -280,12 +284,13 @@ section {
     .about-text {
         padding: 0rem;
         min-width: auto;
+        font-size: 1.3rem;
         text-align: center;
     }
     
     .about-body > p {
         padding: 0.7rem;
-        line-height: 26px;
+        line-height: 2.1rem;
     }
 
     .about-extra {
@@ -297,6 +302,23 @@ section {
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem;
         grid-gap: 5rem;
+    }
+
+    .event-format-card {
+        min-height: 30rem;
+        line-height: 2rem;
+    }
+
+    .event-format-header {
+        font-size: 1.6rem;
+    }
+
+    .event-format-subheader {
+        font-size: 1.4rem;
+    }
+
+    .event-format-body {
+        font-size: 1.2rem;
     }
 
     .event-format-card :hover {
@@ -313,6 +335,7 @@ section {
     
     .problem-statements-text {
         text-align: center;
+        padding: 0;
     }
 
     .problem-statements-image {
@@ -322,10 +345,6 @@ section {
 
     .problem-statements-icon {
         max-width: 12rem;
-    }
-
-    .problem-statements-text {
-        padding: 0;
     }
 
     .problem-statements-list {
@@ -338,8 +357,13 @@ section {
 
     .problem-statements-buttons > div {
         padding: 1.5rem;
-        max-width: 10rem;
+        min-width: 8rem;
         margin: auto;
         margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .problem-statements-buttons a {
+        font-size: 1.2rem;
     }
 }
