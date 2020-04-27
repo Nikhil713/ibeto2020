@@ -21,6 +21,28 @@
     }
 }
 
+@keyframes fade-left {
+    from {
+        transform: translateX(3rem);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-right {
+    from {
+        transform: translateX(-3rem);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -84,6 +106,11 @@ section {
     padding: 2rem;
     min-width: 38rem;
     color: #121212;
+}
+
+.about-text-animate {
+    animation: fade-left;
+    animation-duration: 2s;
 }
 
 .about-header {
