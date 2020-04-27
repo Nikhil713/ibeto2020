@@ -1,17 +1,27 @@
 // problem-statements-icon fade up animation
 var problem_statements_icon = document.querySelector(".problem-statements-icon");
 var problem_statements_list = document.querySelectorAll(".ps-li");
+var about_text = document.querySelector(".about-text");
 
 window.addEventListener('scroll', function (event) {
+    //about-text animation
+    if (isAnyPartOfElementInViewport(about_text)) {
+        console.log ("yes");
+        about_text.classList.add("about-text-animate");
+    }
+    else if (about_text.classList.contains("about-text-animate")) {
+        about_text.classList.remove("about-text-animate");
+    }
+
+    //problem-statements-icon animation
 	if (isAnyPartOfElementInViewport(problem_statements_icon)) {
-        //add animation class when icon is visible
         problem_statements_icon.classList.add("problem-statements-icon-animate");
     }
     else if (problem_statements_icon.classList.contains("problem-statements-icon-animate")) {
-        //remove the class when its not in view so it plays again next time its visible
         problem_statements_icon.classList.remove("problem-statements-icon-animate");
     }
 
+    //problem-statements-list animation
     if (isAnyPartOfElementInViewport(problem_statements_list[0])) {
         let duration = 0.3;
         problem_statements_list.forEach (
