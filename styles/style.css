@@ -1,3 +1,26 @@
+/* keyframes */
+@keyframes fade-down {
+    from {
+        transform: translateY(-100px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        transform: translateY(3rem);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -141,6 +164,95 @@ section {
     padding: 1.5rem 0;
 }
 
+/* problem statements section */
+
+.problem-statements-container {
+    display: flex;
+    padding: 2rem;
+}
+
+.problem-statements-text {
+    padding: 1rem;
+    color: #555;
+}
+
+.problem-statements-header > h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 2rem 0rem;
+}
+
+.problem-statements-header > h3 {
+    font-weight: 400;
+    color: #555;
+}
+
+.problem-statements-image {
+    padding: 8rem;
+}
+
+.problem-statements-icon {
+    max-width: 17rem;
+    border-radius: 1rem;
+    box-shadow: -15px 20px 50px #72727266;
+}
+
+.problem-statements-icon-animate {
+    animation: fade-down;
+    animation-duration: 2s;
+}
+
+.ps-li-animate {
+    animation: fade-up;
+    animation-duration: 2s;
+}
+
+.problem-statements-list {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+.problem-statements-list li {
+    line-height: 2rem;
+}
+
+.problem-statements-buttons {
+    display: flex;
+    color: white;
+    padding: 1rem 0;
+}
+
+.problem-statements-buttons div {
+    padding: 1rem;
+    margin: 0 1rem;
+    min-width: 7rem;
+    height: max-content;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #000000aa;
+    transition-duration: 0.3s;
+}
+
+.problem-statements-register {
+    background-color: #4ebbe3;
+}
+
+.problem-statements-register:hover {
+    background-color: #4e71e3;
+    box-shadow: 5px 5px 20px #4e71e3bb;
+    transform: scale(1.1);
+}
+
+.problem-statements-rules {
+    background-color: #db2523;
+}
+
+.problem-statements-rules:hover {
+    background-color: #f84642;
+    box-shadow: 5px 5px 20px #f84642bb;
+    transform: scale(1.1);
+}
+
 @media only screen and (max-width: 600px) {
 
     /* about section  */
@@ -191,5 +303,43 @@ section {
         background-color: white;
         color: #121212;
         transition: 0s;
+    }
+
+    /* problem-statements section */
+    .problem-statements-container {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    
+    .problem-statements-text {
+        text-align: center;
+    }
+
+    .problem-statements-image {
+        padding: 0;
+        text-align: center;
+    }
+
+    .problem-statements-icon {
+        max-width: 12rem;
+    }
+
+    .problem-statements-text {
+        padding: 0;
+    }
+
+    .problem-statements-list {
+        text-align: left;
+    }
+
+    .problem-statements-buttons {
+        flex-direction: column;
+    }
+
+    .problem-statements-buttons > div {
+        padding: 1.5rem;
+        max-width: 10rem;
+        margin: auto;
+        margin-bottom: 1rem;
     }
 }
