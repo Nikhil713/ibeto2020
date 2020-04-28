@@ -1,54 +1,9 @@
-/* keyframes */
-@keyframes fade-down {
-    from {
-        transform: translateY(-100px);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 100%;
-    }
-}
-
-@keyframes fade-up {
-    from {
-        transform: translateY(3rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 100%;
-    }
-}
-
-@keyframes fade-left {
-    from {
-        transform: translateX(3rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 100%;
-    }
-}
-
-@keyframes fade-right {
-    from {
-        transform: translateX(-3rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 100%;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
+body, html {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -106,11 +61,6 @@ section {
     padding: 2rem;
     min-width: 38rem;
     color: #121212;
-}
-
-.about-text-animate {
-    animation: fade-left;
-    animation-duration: 2s;
 }
 
 .about-header {
@@ -222,16 +172,6 @@ section {
     max-width: 17rem;
     border-radius: 1rem;
     box-shadow: -15px 20px 50px #72727266;
-}
-
-.problem-statements-icon-animate {
-    animation: fade-down;
-    animation-duration: 2s;
-}
-
-.ps-li-animate {
-    animation: fade-up;
-    animation-duration: 2s;
 }
 
 .problem-statements-list {
