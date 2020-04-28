@@ -22,7 +22,6 @@
   line-height: 1.5;
 }
 body {
-    background-image: url(fondo2.jpg);
     margin: 0;
     background-size: cover;
 }
@@ -110,4 +109,15 @@ nav.closed header {
 nav.closed footer button {
   transition-delay: 0s;
   transform: scaleY(0.7) scaleX(1.2);
+}
+
+
+@media only screen and (max-width: 700px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+  }
+
+
 }
