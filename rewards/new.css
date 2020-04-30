@@ -21,7 +21,7 @@
   left: 0;
 }
 .angled_container:after {
-  background-color: rgba(32, 8, 243, 0.5);
+  background-color: rgba(47, 196, 255,0.5);
   transform: rotate(-12deg);
   -webkit-transform-origin: right top 0;
   left: -10%;
@@ -44,6 +44,9 @@
   left:10%;
   z-index:100;
   box-shadow:5px 5px 10px grey;
+  font-size: 2em;
+  box-sizing: border-box;
+  padding:2em;
 }
 
 
