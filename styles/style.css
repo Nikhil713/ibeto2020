@@ -4,7 +4,7 @@
 }
 
 body, html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #777;
@@ -30,10 +30,19 @@ section {
 
 /* about section */
 
+#about-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
 .about-container {
     display: flex;
     flex-direction: row;
-    padding: 5rem 7rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 20rem;
 }
 
 .about-image {
@@ -85,34 +94,53 @@ section {
 
 /* event-format section */
 
+#event-format{
+    height: 100vh;
+}
+
 .event-section-header {
     text-align: center;
-    padding: 3rem;
 }
 
 .event-section-header > h1 {
-    padding: 1rem;
-    font-size: 3rem;
+    padding: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
+}
+
+.event-section-header > h4 {
+    font-weight: 500;
+    padding: 1rem;
 }
 
 .event-format-container {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 5rem 7rem;
+    padding: 5rem 20rem;
+}
+
+.event-format-container h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.event-format-container h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .event-format-card {
     display: flex;
     background-color: white;
     color: #121212;
+    line-height: 1.5;
 }
 
 .event-card {
     text-align: center;
     color: #121212;
-    border: solid 1px #4EC7E3;
+    /* border: solid 1px #4EC7E3; */
     border-radius: 6px;
     width: auto;
 
@@ -143,9 +171,17 @@ section {
 
 /* problem statements section */
 
+#problem-statements{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .problem-statements-container {
     display: flex;
-    padding: 2rem;
+    padding: 4rem;
+    margin: 2rem;
 }
 
 .problem-statements-text {
@@ -227,38 +263,44 @@ section {
 /* rewards section */
 
 #rewards{
-    height: auto;
-    /* padding: 2rem; */
-    /* background-color: blue; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rewards-container{
     display: flex;
     flex-direction: row;
-    margin: 2rem;
+    margin: 1rem;
+    padding: 5rem;
     box-shadow: -15px 20px 50px 15px #72727266;
+    border-radius: 30px;
 }
 
 .rewards-image{
     padding: 8rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rewards-icon{
-    max-width: 17rem;
+    max-width: 20rem;
     border-radius: 1rem;
 }
 
 
 .rewards-text {
-    padding: 1rem;
+    padding: 4em;
     color: #555;
 }
 
 .rewards-header > h2 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    padding: 2rem 0rem;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 0rem 0rem;
 }
 
 
@@ -268,12 +310,17 @@ section {
 }
 
 .rewards-list li {
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
 
     /* about section  */
+
+    #about-section{
+        height: auto;
+    }
+
     .about-container {
         flex-direction: column;
         padding: 1rem;
@@ -312,6 +359,14 @@ section {
     }
     /* event-format section  */
     
+    #event-format {
+        height: auto;
+    }
+
+    .event-section-header {
+        padding: 3rem;
+    }
+
     .event-format-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem;
@@ -342,6 +397,11 @@ section {
     }
 
     /* problem-statements section */
+
+    #problem-statements{
+        height: auto;
+    }
+
     .problem-statements-container {
         flex-direction: column;
         margin-top: 5rem;
@@ -383,9 +443,14 @@ section {
 
     /* rewards */
 
+    #rewards {
+        height: auto;
+    }
     .rewards-container {
         flex-direction: column;
-        margin-top: 5rem;
+        padding: 0rem;
+        padding-top: 4rem;
+        margin: 1rem;
     }
     
     .rewards-text {
@@ -404,7 +469,10 @@ section {
 
     .rewards-list {
         text-align: left;
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
     }
 
+    .rewards-list li {
+        line-height: 2.5rem;
+    }
 }
