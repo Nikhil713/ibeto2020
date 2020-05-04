@@ -12,6 +12,10 @@ body, html {
     overflow-x: hidden;
 }
 
+section {
+    min-height: 100vh;
+}
+
 h1 {
     font-size: 2rem;
     color: #555;
