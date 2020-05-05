@@ -115,7 +115,7 @@ nav.closed footer button {
 
 @media only screen and (max-width: 700px) {
  nav{
-   position:absolute;
+   position:fixed;
    width:100%;
    margin:0;
    box-sizing: border-box;
