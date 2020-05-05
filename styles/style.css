@@ -12,6 +12,10 @@ body, html {
     overflow-x: hidden;
 }
 
+section {
+    min-height: 100vh;
+}
+
 h1 {
     font-size: 2rem;
     color: #555;
@@ -261,56 +265,50 @@ section {
 }
 
 /* rewards section */
+#rewards {
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
 
-#rewards{
-    height: 100vh;
+.rewards-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    margin: 2rem;
+    padding: 2rem 0;
+    background-color: #4e71e3;
+    box-shadow: -15px 20px 50px #72727266;
+    border-radius: 6px;
 }
 
-.rewards-container{
+.rewards-image {
+    padding: 7rem;
     display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    padding: 5rem;
-    box-shadow: -15px 20px 50px 15px #72727266;
-    border-radius: 30px;
 }
 
-.rewards-image{
-    padding: 8rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rewards-icon {
+    max-height: 15rem;
+    border-radius: 12px;
+    box-shadow: -15px 20px 50px #002cbdbb;
 }
-
-.rewards-icon{
-    max-width: 20rem;
-    border-radius: 1rem;
-}
-
 
 .rewards-text {
-    padding: 4em;
-    color: #555;
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: white;
 }
-
-.rewards-header > h2 {
-    font-size: 3rem;
-    font-weight: 500;
-    padding: 0rem 0rem;
-}
-
 
 .rewards-list {
-    padding: 4rem 2rem;
-    font-size: 1.3rem;
+    padding-left: 1rem;
 }
 
 .rewards-list li {
-    line-height: 3rem;
+    line-height: 2.5rem;
+}
+
+.rewards-header > h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    padding: 2rem 0rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -442,15 +440,18 @@ section {
     }
 
     /* rewards */
+    #rewards {
+        margin: 0rem;
+    }
 
     #rewards {
         height: auto;
     }
     .rewards-container {
         flex-direction: column;
-        padding: 0rem;
-        padding-top: 4rem;
-        margin: 1rem;
+        margin: 0;
+        border-radius: 0;
+        padding-top: 7rem;
     }
     
     .rewards-text {
@@ -458,9 +459,13 @@ section {
         padding: 0;
     }
 
+    .rewards-header {
+        
+    }
+
     .rewards-image {
         padding: 0;
-        text-align: center;
+        justify-content: center;
     }
 
     .rewards-icon {
