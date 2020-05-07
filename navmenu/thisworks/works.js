@@ -44,8 +44,8 @@ var $els = $('.menu a, .menu header');
         e.stopPropagation();
       });
         
-      //on click link nav disappears
-      $('.menu li ').on('click',function(e){
+      /*on click link nav disappears*/
+      $('.menu li a ').on('click',function(e){
         $els.each(function(j){
             $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
             $(this).css('--delay-in',j*.1+'s');
