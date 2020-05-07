@@ -32,14 +32,130 @@ section {
     width: 100%;
 }
 
+/* navbar */
+
+nav {
+    --duration: .2s;
+    --easing: ease-in-out;
+    position: fixed;
+    width: 220px;
+    margin: 20px;
+    z-index: 10;
+    right: 0;
+}
+
+nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: -4px 0 0 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    /*background: #fff;*/
+    /*changed on 6th may*/
+    background: rgb(47, 196, 255);
+    /*changed on 6th may*/
+    transform-origin: 0 0;
+    transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+    transition-delay: var(--delay-out);
+    border-radius: 4px;
+    padding: 1em 1.52em;
+    /*6th may evening
+  
+    box-shadow:20px 20px 25px rgb(47,196,255);*/
+}
+
+nav a:hover {
+    background: #efefef;
+}
+
+nav .sub-menu a {
+    font-size: .9em;
+    color: #666666;
+    border-left: 2em solid white;
+    padding: .75em;
+    background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
+}
+
+nav .sub-menu a:hover {
+    background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
+}
+
+nav header {
+    font-weight: 600;
+    display: block;
+    /*background: rgba(255, 255, 255, 0.5); */
+    /*changed on 6th may*/
+    background: rgb(47, 196, 255, 0.5);
+    /*changed on 6th may*/
+    transform-origin: 0 0;
+    transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+    transition-delay: var(--delay-out);
+    border-radius: 4px;
+    padding: 1em 1.52em;
+    /*6th may evening
+  
+    box-shadow:20px 20px 25px rgb(47,196,255);*/
+}
+
+nav header span {
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+    padding: 0;
+    cursor: pointer;
+    line-height: 1;
+    float: right;
+}
+
+nav footer button {
+    position: absolute;
+    top: 0;
+    border: none;
+    padding: calc(1em - 2px);
+    width: 100%;
+    transform-origin: 0 0;
+    transition: transform var(--duration) var(--easing);
+    transition-delay: calc(var(--duration) + (.1s * (var(--count) / 2)));
+    cursor: pointer;
+    outline: none;
+    background: #cdcdcd;
+    opacity: 0;
+}
+
+nav.closed a, nav.closed header {
+    transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.75)) scaleY(0.1) scaleX(0.2);
+    transition-delay: var(--delay-in);
+    color: transparent;
+}
+
+nav.closed footer button {
+    transition-delay: 0s;
+    transform: scaleY(0.7) scaleX(1.2);
+}
+
+/*modification made for click oversized*/
+
+nav.closed footer button {
+    width: 50%;
+    margin-right: 40%;
+    margin-left: 81%;
+}
+
 /* about section */
 
-#about-section{
+#about-section {
     min-height: 100vh;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .about-container {
@@ -82,7 +198,7 @@ section {
     padding-left: 1.5rem;
 }
 
-.about-header > h1 {
+.about-header>h1 {
     font-size: 40px;
     font-weight: 400;
 }
@@ -96,7 +212,7 @@ section {
     margin-left: 1.5rem;
 }
 
-.about-body > p {
+.about-body>p {
     padding: 0.7rem;
     padding-left: 1.5rem;
     line-height: 26px;
@@ -105,7 +221,7 @@ section {
 
 /* event-format section */
 
-#event-format{
+#event-format {
     min-height: 100vh;
     height: auto;
 }
@@ -114,13 +230,13 @@ section {
     text-align: center;
 }
 
-.event-section-header > h1 {
+.event-section-header>h1 {
     padding: 2rem;
     font-size: 2.5rem;
     font-weight: 500;
 }
 
-.event-section-header > h4 {
+.event-section-header>h4 {
     font-weight: 500;
     padding: 1rem;
 }
@@ -157,11 +273,9 @@ section {
     /* border: solid 1px #4EC7E3; */
     border-radius: 6px;
     width: auto;
-
     display: flex;
     flex-direction: column;
     padding: 3rem;
-
     box-shadow: 5px 5px 20px #4EC7E3bb;
 }
 
@@ -183,12 +297,13 @@ section {
     padding: 1.5rem 0;
 }
 
-.event-format-body{
+.event-format-body {
     font-size: 15px;
 }
+
 /* problem statements section */
 
-#problem-statements{
+#problem-statements {
     height: auto;
     /* min-height: 80vh; */
     display: flex;
@@ -207,13 +322,13 @@ section {
     color: #555;
 }
 
-.problem-statements-header > h2 {
+.problem-statements-header>h2 {
     font-size: 3.5rem;
     font-weight: 400;
     padding: 2rem 0rem;
 }
 
-.problem-statements-header > h3 {
+.problem-statements-header>h3 {
     font-weight: 400;
     color: #555;
 }
@@ -279,6 +394,7 @@ section {
 }
 
 /* rewards section */
+
 #rewards {
     height: auto;
     min-height: 90vh;
@@ -324,162 +440,131 @@ section {
     line-height: 2.5rem;
 }
 
-.rewards-header > h2 {
+.rewards-header>h2 {
     font-size: 3.5rem;
     font-weight: 400;
     padding: 2rem 0rem;
 }
 
 @media only screen and (max-width: 600px) {
-
     /* about section  */
-
-    #about-section{
+    #about-section {
         height: auto;
     }
-
     .about-container {
         flex-direction: column;
         padding: 1rem;
     }
-    
     .about-image {
         display: flex;
         justify-content: center;
     }
-
     .about-frame {
         display: none;
     }
-    
     .about-icon {
         padding: 0rem;
         width: 15rem;
         height: 15rem;
         box-shadow: none;
     }
-    
     .about-text {
         padding: 0rem;
         min-width: auto;
         font-size: 1.3rem;
         text-align: center;
     }
-    
-    .about-body > p {
+    .about-body>p {
         padding: 0.7rem;
         line-height: 2.1rem;
     }
-
     .about-extra {
         margin: auto;
     }
     /* event-format section  */
-    
     #event-format {
         height: auto;
     }
-
     .event-card {
         padding: 0;
     }
     .event-section-header {
         padding: 2rem;
     }
-
     .event-format-container {
         grid-template-columns: repeat(1, 1fr);
         /* padding: 1rem; */
         grid-gap: 5rem;
     }
-
-    .event-format-header > h3 {
+    .event-format-header>h3 {
         font-size: 25px;
     }
-
-    .event-format-subheader > h4 {
+    .event-format-subheader>h4 {
         font-size: 20px;
     }
-
     .event-format-card {
         margin-top: 1.5rem;
         /* min-height: 30rem; */
         height: auto;
         line-height: 2rem;
     }
-
     .event-format-header {
         font-size: 1.6rem;
         padding: 1rem 0;
     }
-
     .event-format-subheader {
         font-size: 1.4rem;
         padding: 1rem 0;
     }
-
     .event-format-body {
         font-size: 15px;
         padding: 1.5rem 1.5rem 2rem 1.5rem;
     }
-
     .event-format-card :hover {
         background-color: white;
         color: #121212;
         transition: 0s;
     }
-
     /* problem-statements section */
-
-    #problem-statements{
+    #problem-statements {
         min-height: 80vh;
         height: auto;
     }
-
     .problem-statements-container {
         flex-direction: column;
         margin-top: 5rem;
     }
-    
     .problem-statements-text {
         text-align: center;
         padding: 0;
     }
-
     .problem-statements-image {
         padding: 0;
         text-align: center;
     }
-
     .problem-statements-icon {
         max-width: 12rem;
     }
-
     .problem-statements-list {
         text-align: left;
     }
-
     .problem-statements-buttons {
         flex-direction: column;
     }
-
-    .problem-statements-buttons > div {
+    .problem-statements-buttons>div {
         padding: 1.5rem;
         min-width: 8rem;
         margin: auto;
         margin-bottom: 1rem;
         text-align: left;
     }
-
     .problem-statements-buttons a {
         font-size: 1.2rem;
     }
-
     /* rewards */
     #rewards {
         margin: 0rem;
     }
-
     #rewards {
         height: auto;
     }
@@ -489,38 +574,29 @@ section {
         border-radius: 0;
         padding-top: 7rem;
     }
-    
     .rewards-text {
         text-align: center;
         padding: 0;
     }
-
-    .rewards-header {
-        
-    }
-
+    .rewards-header {}
     .rewards-image {
         padding: 0;
         justify-content: center;
     }
-
     .rewards-icon {
         max-width: 12rem;
     }
-
     .rewards-list {
         text-align: left;
         padding: 1rem 3rem;
     }
-
     .rewards-list li {
         line-height: 2.5rem;
     }
 }
 
-
 @media only screen and (min-width:1500px) {
-    .event-format-container{
+    .event-format-container {
         margin: 20%;
         margin-top: 100px;
     }
