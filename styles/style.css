@@ -446,6 +446,81 @@ nav.closed footer button {
     padding: 2rem 0rem;
 }
 
+/* ibeto jr */
+
+#ibetojr {
+    min-height: 40vh;
+    height: auto;
+    width: 100vw;
+    background: #4ebbe3bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ibetojr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ibetojr-container>h1 {
+    color: white;
+}
+
+.ibetojr-container>h2 {
+    color: white;
+}
+
+/* contacts  */
+
+#contacts {
+    min-height: 70vh;
+    height: auto;
+}
+
+.contact-container{
+    padding: 2rem 1rem;
+}
+.contact-row {
+    /* padding: 2rem 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-cards {
+    margin: 1rem 3rem;
+    padding: 1rem 4rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px #4EC7E3bb;
+}
+
+.contact-img {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img>img {
+    max-width: 8rem;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.contact-desc > a {
+    padding: 5px 0;
+}
 @media only screen and (max-width: 600px) {
     /* about section  */
     #about-section {
@@ -592,6 +667,25 @@ nav.closed footer button {
     }
     .rewards-list li {
         line-height: 2.5rem;
+    }
+    .contact-container{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .contact-cards{
+        padding: 1rem 2rem;
+        margin: 1rem;
+    }
+    .contact-img > img {
+        max-width: 4rem;
+    }
+    .contact-desc{
+        padding: 1.25rem;
     }
 }
 
