@@ -43,11 +43,10 @@ nav {
     z-index: 10;
     right: 0;
 
-
-    transition-delay:.9s;                  /*added on 12th may*/
-    border-radius: 1px;                     /*added on 12th may*/
-    border-style: solid;                    /*added on 12th may*/
-    border-color: rgb(47,196,255);                    /*added on 12th may*/
+/*added on 12th may*/
+    transition-delay:.9s;  
+    border-style: solid;                    
+    border-color: rgb(47,196,255);                   
 }
 
 nav ol {
@@ -81,11 +80,15 @@ nav a:hover {
     background: #efefef;
 }
 
+/*added on 12th may*/
+nav.closed{   
+  border-radius:unset;                          
+  border-style: unset;                    
+  border-color: unset;        
+}
 
-nav.closed{                  
-  border-radius: unset;                     /*added on 12th may*/
-  border-style: unset;                    /*added on 12th may*/
-  border-color: unset;        /*added on 12th may*/
+nav.closed a:hover{   /*added to remove on-hover colour change of navbar icon*/
+    background:#fff;
 }
 
 nav .sub-menu a {
