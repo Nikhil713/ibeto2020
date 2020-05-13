@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: 'Montserrat'; */
 }
 
 body, html {
@@ -24,7 +25,7 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
-    color: #333;
+    /* color: #333; */
     font-weight: bold;
 }
 
@@ -46,7 +47,7 @@ nav {
 /*added on 12th may*/
     transition-delay:.9s;  
     border-style: solid;                    
-    border-color: rgb(47,196,255);                   
+    border-color:  transparent                   
 }
 
 nav ol {
@@ -108,7 +109,8 @@ nav header {
     display: block;
     /*background: rgba(255, 255, 255, 0.5); */
     /*changed on 6th may*/
-    background: rgb(47, 196, 255, 0.5);
+    background: white ;
+    box-shadow: 0 10px 15px 2px rgba(47,196,255,0.4);
     /*changed on 6th may*/
     transform-origin: 0 0;
     transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
@@ -128,6 +130,7 @@ nav header span {
     cursor: pointer;
     line-height: 1;
     float: right;
+    margin-top: -3.5px;
 }
 
 nav footer button {
@@ -220,7 +223,7 @@ nav.closed footer button {
 }
 
 .about-extra {
-    background-color: #007BFF;
+    background-color: #4EC7E3;
     color: white;
     height: 4rem;
     width: 12rem;
@@ -298,7 +301,8 @@ nav.closed footer button {
 .event-format-card :hover {
     background-color: #4EC7E3;
     color: white;
-    transition: 1s;
+    transition: 0.5s ease-in;
+    cursor: pointer;
 }
 
 .event-format-icon {
@@ -339,14 +343,16 @@ nav.closed footer button {
 }
 
 .problem-statements-header>h2 {
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 500;
     padding: 2rem 0rem;
 }
 
 .problem-statements-header>h3 {
     font-weight: 400;
     color: #555;
+    font-size: 1.5rem;
+    padding-right: 6rem;
 }
 
 .problem-statements-image {
@@ -396,6 +402,7 @@ nav.closed footer button {
     background-color: #4ebbe3;
     box-shadow: 5px 5px 20px #4ebbe3bb;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .problem-statements-rules {
@@ -407,6 +414,7 @@ nav.closed footer button {
     background-color: #f84642;
     box-shadow: 5px 5px 20px #f84642bb;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* rewards section */
@@ -426,7 +434,7 @@ nav.closed footer button {
     height: 100%;
     margin: 2rem;
     padding: 2rem 0;
-    background-color: #4e71e3;
+    /* background-color: #4e71e3; */
     box-shadow: -15px 20px 50px #72727266;
     border-radius: 6px;
 }
@@ -439,13 +447,13 @@ nav.closed footer button {
 .rewards-icon {
     max-height: 15rem;
     border-radius: 12px;
-    box-shadow: -15px 20px 50px #002cbdbb;
+    /* box-shadow: -15px 20px 50px #002cbdbb; */
 }
 
 .rewards-text {
     padding: 2rem;
     font-size: 1.3rem;
-    color: white;
+    /* color: white; */
 }
 
 .rewards-list {
@@ -624,6 +632,7 @@ nav.closed footer button {
     .problem-statements-container {
         flex-direction: column;
         margin-top: 5rem;
+        padding: 0;
     }
     .problem-statements-text {
         text-align: center;
@@ -641,6 +650,9 @@ nav.closed footer button {
     }
     .problem-statements-buttons {
         flex-direction: column;
+    }
+    .problem-statements-header>h3 {
+        padding-right: 0;
     }
     .problem-statements-buttons>div {
         padding: 1.5rem;
@@ -709,5 +721,8 @@ nav.closed footer button {
     .event-format-container {
         margin: 20%;
         margin-top: 100px;
+    }
+    .problem-statements-header>h3 {
+        padding-right: 8rem;
     }
 }
