@@ -153,7 +153,7 @@ nav.closed a, nav.closed header {
 
 nav.closed footer button {
     transition-delay: 0s;
-    transform: scaleY(0.9) scaleX(0.45);
+    transform: scaleY(1) scaleX(0.45);
 }
 
 /*modification made for click oversized*/
