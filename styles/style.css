@@ -10,6 +10,7 @@ body, html {
     color: #777;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;                       /*added on may 14 for smooth scrolling on clicking the navbar links*/
 }
 
 /* section {
