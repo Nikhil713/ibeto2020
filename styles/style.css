@@ -326,7 +326,7 @@ nav.closed footer button {
 
 #problem-statements {
     height: auto;
-    /* min-height: 80vh; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,7 +422,7 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    min-height: 90vh;
+    min-height: 100vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -501,8 +501,12 @@ nav.closed footer button {
 /* contacts  */
 
 #contacts {
-    min-height: 70vh;
+    min-height: 100vh;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container{
@@ -627,7 +631,7 @@ nav.closed footer button {
     }
     /* problem-statements section */
     #problem-statements {
-        min-height: 80vh;
+        min-height: 100vh;
         height: auto;
     }
     .problem-statements-container {
