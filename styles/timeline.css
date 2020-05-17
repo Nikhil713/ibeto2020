@@ -108,7 +108,7 @@ h1{
     font-size: 10vw;
   }
   .timeline_container{/* OUTER DIV ELEMENT -> TIMELINE CONTAINER*/
-    background-color:whitesmoke; 
+    /* background-color:whitesmoke;  */
     /* padding:0.5em; */
   }
 
