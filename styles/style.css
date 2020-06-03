@@ -171,6 +171,7 @@ nav.closed footer button {
 /* about section */
 
 #about-section {
+    margin-top: 100vh;
     min-height: 100vh;
     height: auto;
     display: flex;
