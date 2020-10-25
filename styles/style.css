@@ -365,7 +365,7 @@ nav.closed footer button {
 
 #problem-statements {
     height: auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,13 +373,18 @@ nav.closed footer button {
 
 .problem-statements-container {
     display: flex;
-    padding: 4rem;
-    margin: 2rem;
+    padding: 4rem 4rem;
+    margin: 0 2rem;
 }
 
 .problem-statements-text {
     padding: 1rem;
-    color: #555;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #555; */
+    color: black;
 }
 
 .problem-statements-header>h2 {
@@ -390,19 +395,18 @@ nav.closed footer button {
 
 .problem-statements-header>h3 {
     font-weight: 400;
-    color: #555;
+    /* color: #555; */
+    color: black;
     font-size: 1.5rem;
     padding-right: 6rem;
 }
 
 .problem-statements-image {
-    padding: 8rem;
+    padding: 4rem 6rem;
 }
 
 .problem-statements-icon {
-    max-width: 17rem;
-    border-radius: 1rem;
-    box-shadow: -15px 20px 50px #72727266;
+    max-width: 22rem;
 }
 
 .problem-statements-list {
@@ -734,7 +738,7 @@ nav.closed footer button {
 
 @media only screen and (min-width:1500px) {
     .event-format-container {
-        margin: 20%;
+        margin: 0 20%;
         margin-top: 100px;
     }
     .problem-statements-header>h3 {
@@ -742,7 +746,7 @@ nav.closed footer button {
     }
 }
 
-@media only screen and (max-width: 1370px) {
+@media only screen and (min-width:1200px) and (max-width: 1370px) {
     .about-text {
         min-width: 40rem;
         margin-left: 3rem;
@@ -763,9 +767,15 @@ nav.closed footer button {
     .about-buttons div {
         margin: 0rem;
     }
+    .problem-statements-image{
+        padding: 4rem 3rem;
+    }
+    .problem-statements-icon{
+        max-width: 19rem;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     /* about section  */
     #about-section {
         height: auto;
@@ -877,6 +887,9 @@ nav.closed footer button {
     .problem-statements-image {
         padding: 0;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .problem-statements-icon {
         max-width: 12rem;
@@ -888,6 +901,7 @@ nav.closed footer button {
         flex-direction: column;
     }
     .problem-statements-header>h3 {
+        font-size: 1.2rem;
         padding-right: 0;
     }
     .problem-statements-buttons>div {
@@ -899,6 +913,9 @@ nav.closed footer button {
     }
     .problem-statements-buttons a {
         font-size: 1.2rem;
+    }
+    .problem-statements-list li{
+        font-size: 1rem;
     }
     /* rewards */
     #rewards {
