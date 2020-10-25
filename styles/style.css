@@ -8,7 +8,7 @@ body, html {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /* font-size: 1rem; */
     font-weight: 400;
-    color: #777;
+    /* color: #777; */
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -224,7 +224,7 @@ nav.closed footer button {
 }
 
 .about-header>h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -378,6 +378,7 @@ nav.closed footer button {
 }
 
 .problem-statements-text {
+    width: 60rem;
     padding: 1rem;
 
     display: flex;
@@ -425,10 +426,12 @@ nav.closed footer button {
 }
 
 .problem-statements-buttons a {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .problem-statements-buttons div {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     margin: 0 1rem;
     min-width: 7rem;
@@ -465,8 +468,8 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    min-height: 100vh;
-    box-sizing: border-box;
+    /* min-height: 70vh; */
+    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,12 +478,12 @@ nav.closed footer button {
 
 .rewards-container {
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     margin: 2rem;
     padding: 2rem 0;
     /* background-color: #4e71e3; */
-    box-shadow: -15px 20px 50px #72727266;
-    border-radius: 6px;
+    /* box-shadow: -15px 20px 50px #72727266; */
+    /* border-radius: 6px; */
 }
 
 .rewards-image {
@@ -489,12 +492,13 @@ nav.closed footer button {
 }
 
 .rewards-icon {
-    max-height: 15rem;
-    border-radius: 12px;
+    max-width: 22rem;
+    /* border-radius: 12px; */
     /* box-shadow: -15px 20px 50px #002cbdbb; */
 }
 
 .rewards-text {
+    width: 60rem;
     padding: 2rem;
     font-size: 1.3rem;
     /* color: white; */
@@ -509,7 +513,7 @@ nav.closed footer button {
 }
 
 .rewards-header>h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     padding: 2rem 0rem;
 }
@@ -746,7 +750,7 @@ nav.closed footer button {
     }
 }
 
-@media only screen and (min-width:1200px) and (max-width: 1370px) {
+@media only screen and (min-width:1220px) and (max-width: 1370px) {
     .about-text {
         min-width: 40rem;
         margin-left: 3rem;
@@ -768,14 +772,28 @@ nav.closed footer button {
         margin: 0rem;
     }
     .problem-statements-image{
-        padding: 4rem 3rem;
+        padding: 4rem 0rem;
+        padding-left: 8rem;
     }
     .problem-statements-icon{
         max-width: 19rem;
     }
+    .problem-statements-text{
+        width: 55rem;
+    }
+    .rewards-image{
+        padding: 4rem 3rem;
+        padding-left: 5rem;
+    }
+    .rewards-icon{
+        max-width: 15rem;
+    }
+    .rewards-text{
+        width: 50rem;
+    }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
     /* about section  */
     #about-section {
         height: auto;
@@ -877,10 +895,14 @@ nav.closed footer button {
     }
     .problem-statements-container {
         flex-direction: column;
+        width: auto;
+        /* justify-content: center;
+        align-items: center; */
         margin-top: 5rem;
         padding: 0;
     }
     .problem-statements-text {
+        width: auto;
         text-align: center;
         padding: 0;
     }
@@ -905,14 +927,14 @@ nav.closed footer button {
         padding-right: 0;
     }
     .problem-statements-buttons>div {
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
         min-width: 8rem;
         margin: auto;
         margin-bottom: 1rem;
         text-align: left;
     }
     .problem-statements-buttons a {
-        font-size: 1.2rem;
+        font-size: 17px;
     }
     .problem-statements-list li{
         font-size: 1rem;
@@ -926,15 +948,20 @@ nav.closed footer button {
     }
     .rewards-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0;
         border-radius: 0;
         padding-top: 7rem;
     }
     .rewards-text {
+        width: auto;
         text-align: center;
         padding: 0;
     }
-    .rewards-header {}
+    .rewards-header >h2{
+        font-size: 2.5rem;
+    }
     .rewards-image {
         padding: 0;
         justify-content: center;
@@ -947,6 +974,8 @@ nav.closed footer button {
         padding: 1rem 3rem;
     }
     .rewards-list li {
+        color: black;
+        font-size: 1rem;
         line-height: 2.5rem;
     }
     /* ibeto jr */
