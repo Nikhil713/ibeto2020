@@ -425,9 +425,9 @@ nav.closed footer button {
     padding: 1rem 0;
 }
 
-.problem-statements-buttons a {
-    /* margin-left: 1rem; */
-}
+/* .problem-statements-buttons a {
+    margin-left: 1rem;
+} */
 
 .problem-statements-buttons div {
     display: flex;
@@ -696,13 +696,17 @@ nav.closed footer button {
 }
 
 .contact-cards {
+    width: 30rem;
     margin: 1rem 3rem;
     padding: 1rem 4rem;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 20px #4EC7E3bb;
+    /* box-shadow: 5px 5px 20px #4EC7E3bb; */
+    -webkit-box-shadow: 0px 0px 14px -6px black;
+    -moz-box-shadow: 0px 0px 14px -6px black;
+    box-shadow: 0px 0px 14px -6px black;
 }
 
 .contact-img {
@@ -711,9 +715,9 @@ nav.closed footer button {
 }
 
 .contact-img>img {
-    max-width: 8rem;
+    max-width: 9rem;
     border-radius: 100%;
-    margin: 1rem;
+    margin: 1rem 0.5rem;
 }
 
 .contact-desc {
@@ -725,6 +729,22 @@ nav.closed footer button {
 
 .contact-desc>a {
     padding: 5px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.designation{
+    font-size: 1rem !important;
+}
+
+.contact-links {
+    font-size: 0.9rem !important;
+}
+.contact-links:hover{
+    color: grey;
+    text-decoration: underline;
+    transition: 1s;
 }
 
 .footer .footer_bottom p {
@@ -790,6 +810,13 @@ nav.closed footer button {
     }
     .rewards-text{
         width: 50rem;
+    }
+
+    .contact-cards{
+        width: 25rem;
+    }
+    .designation{
+        font-size: 15px !important;
     }
 }
 
@@ -895,7 +922,7 @@ nav.closed footer button {
     }
     .problem-statements-container {
         flex-direction: column;
-        width: auto;
+        /* width: auto; */
         /* justify-content: center;
         align-items: center; */
         margin-top: 5rem;
@@ -990,6 +1017,7 @@ nav.closed footer button {
     .contact-container {
         margin: 0;
         padding: 0;
+        padding-bottom: 5rem;
     }
     .contact-row {
         display: flex;
@@ -997,13 +1025,48 @@ nav.closed footer button {
         margin: 0;
     }
     .contact-cards {
-        padding: 1rem 2rem;
+        padding: 1rem;
         margin: 1rem;
+        width: 20rem;
     }
     .contact-img>img {
-        max-width: 4rem;
+        max-width: 6rem;
     }
     .contact-desc {
-        padding: 1.25rem;
+        padding: 1rem;
+    }
+    .contact-desc > a{
+        font-size: 17px;
+    }
+    .designation{
+        font-size: 15px !important;
+    }
+    .contact-links{
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (min-width:630px) and (max-width: 1200px) {
+
+    .problem-statements-container{
+        margin:0 6rem;
+    }
+    .rewards-container{
+        margin: 0 4rem;
+    }
+    .contact-cards{
+        width: 30rem;
+    }
+    .contact-img>img {
+        max-width: 9rem;
+    }
+    .contact-desc > a{
+        font-size: 22px;
+    }
+    .designation{
+        font-size: 19px !important;
+    }
+    .contact-links{
+        font-size: 17px !important;
     }
 }
