@@ -17,8 +17,8 @@ var $els = $('.menu a, .menu header');
             e.preventDefault();
             $els.each(function(j){
                 $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 25);
-                $(this).css('--delay-in',j*.1+'s');
-                $(this).css('--delay-out',(count-j)*.1+'s');
+                $(this).css('--delay-in',j*.1+'s');//decrease that .1 to increase speed of closing
+                $(this).css('--delay-out',(count-j)*.0005+'s');//decrease that .1 to increase speed of opening(YOUR SOLN IS .0005)
                 $(this).css('--left',$(this)[0].getBoundingClientRect().left - (document.documentElement.clientWidth));
 
                 //works till here
