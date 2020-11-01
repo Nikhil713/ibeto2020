@@ -66,7 +66,8 @@ nav a {
     text-decoration: none;
     /*background: #fff;*/
     /*changed on 6th may*/
-    background: rgb(255, 255, 255);
+    /*background: rgb(255, 255, 255); removed on OCT 31*/
+    background:rgb(234, 255, 255);  /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
     transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
@@ -113,7 +114,8 @@ nav header {
     display: block;
     /*background: rgba(255, 255, 255, 0.5); */
     /*changed on 6th may*/
-    background: white;
+    /*background: white;  removed on OCT 31*/
+    background:rgb(234, 255, 255);  /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
     transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
@@ -124,7 +126,7 @@ nav header {
     
     box-shadow:20px 20px 25px rgb(47,196,255);*/
     /*box-shadow: 0 10px 15px 2px rgba(47, 196, 255, 0.4);      removed on OCT 31*/
-    box-shadow: 0px 3px 8px 0px rgba(78, 199, 227,0.4);            /*added on OCT 31*/
+    box-shadow: 0px 3px 8px 0px rgba(79, 200, 227, 0.4);            /*added on OCT 31*/
 }
 
 nav header span {
