@@ -272,7 +272,7 @@ nav.closed footer button {
     min-width: 7rem;
     height: max-content;
     border-radius: 4px;
-    transition-duration: 0.3s;
+    /* transition-duration: 0.3s; */
 }
 
 .about-register {
@@ -283,7 +283,7 @@ nav.closed footer button {
 .about-register:hover {
     background-color: #4ebbe3;
     box-shadow: 5px 5px 20px #4ebbe3bb;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     cursor: pointer;
 }
 
@@ -314,7 +314,7 @@ nav.closed footer button {
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin: 10%;
-    margin-top: 100px;
+    margin-top: 50px;
     width: auto;
 }
 
@@ -338,7 +338,7 @@ nav.closed footer button {
 .event-card {
     text-align: center;
     color: #121212;
-    /* border: solid 1px grey; */
+    /* border: solid 0.5px #4EC7E3; */
     border-radius: 6px;
     width: auto;
     display: flex;
@@ -783,7 +783,7 @@ nav.closed footer button {
 @media only screen and (min-width:1500px) {
     .event-format-container {
         margin: 0 20%;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .problem-statements-header>h3 {
         padding-right: 8rem;
