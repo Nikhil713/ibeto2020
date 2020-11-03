@@ -217,6 +217,10 @@ nav.closed footer button {
     -webkit-box-shadow: 1px 0px 16px -10px rgba(0, 0, 0, 1);
     -moz-box-shadow: 1px 0px 16px -10px rgba(0, 0, 0, 1);
     box-shadow: 1px 0px 16px -10px rgba(0, 0, 0, 1);
+    /* border: solid 1px #4EC7E3;
+    -webkit-box-shadow: 0px 0px 6px -1px #4EC7E3;
+    -moz-box-shadow: 0px 0px 6px -1px #4EC7E3;
+    box-shadow: 0px 0px 6px -1px #4EC7E3; */
     background-color: white;
 }
 
@@ -334,7 +338,7 @@ nav.closed footer button {
 .event-card {
     text-align: center;
     color: #121212;
-    /* border: solid 1px #4EC7E3; */
+    /* border: solid 1px grey; */
     border-radius: 6px;
     width: auto;
     display: flex;
@@ -380,6 +384,7 @@ nav.closed footer button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f2f2f2;
 }
 
 .problem-statements-container {
@@ -511,6 +516,9 @@ nav.closed footer button {
     width: 60rem;
     padding: 2rem;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* color: white; */
 }
 
@@ -692,6 +700,7 @@ nav.closed footer button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background: #f2f2f2; */
 }
 
 .contact-container {
@@ -714,9 +723,9 @@ nav.closed footer button {
     justify-content: center;
     align-items: center;
     /* box-shadow: 5px 5px 20px #4EC7E3bb; */
-    -webkit-box-shadow: 0px 0px 14px -6px black;
-    -moz-box-shadow: 0px 0px 14px -6px black;
-    box-shadow: 0px 0px 14px -6px black;
+    -webkit-box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
 }
 
 .contact-img {
