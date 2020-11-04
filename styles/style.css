@@ -48,7 +48,7 @@ nav {
     /*added on 12th may*/
     transition-delay: .9s;
     border-style: solid;
-    border-color: transparent
+    border-color: transparent;
 }
 
 nav ol {
@@ -67,7 +67,7 @@ nav a {
     /*background: #fff;*/
     /*changed on 6th may*/
     /*background: rgb(255, 255, 255); removed on OCT 31*/
-    background: rgb(234, 255, 255);
+    background: white;/*rgb(234, 255, 255);*/
     /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
@@ -117,7 +117,7 @@ nav header {
     /*background: rgba(255, 255, 255, 0.5); */
     /*changed on 6th may*/
     /*background: white;  removed on OCT 31*/
-    background: rgb(255, 239, 234);
+    background: white;/*rgb(255, 239, 234);
     /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
@@ -165,7 +165,7 @@ nav.closed a, nav.closed header {
     transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.75)) scaleY(0.1) scaleX(0.2);
     transition-delay: var(--delay-in);
     color: transparent;
-    box-shadow: 1px 2px 8px 8px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.4);
 }
 
 nav.closed footer button {
