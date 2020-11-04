@@ -143,6 +143,7 @@ nav header span {
     line-height: 1;
     float: right;
     margin-top: -3.5px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav footer button {
