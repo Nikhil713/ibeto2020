@@ -117,7 +117,7 @@ nav header {
     /*background: rgba(255, 255, 255, 0.5); */
     /*changed on 6th may*/
     /*background: white;  removed on OCT 31*/
-    background: rgb(234, 255, 255);
+    background: rgb(255, 239, 234);
     /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
@@ -143,7 +143,6 @@ nav header span {
     line-height: 1;
     float: right;
     margin-top: -3.5px;
-    -webkit-tap-highlight-color: transparent;
 }
 
 nav footer button {
@@ -159,6 +158,7 @@ nav footer button {
     outline: none;
     background: #cdcdcd;
     opacity: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav.closed a, nav.closed header {
@@ -171,6 +171,7 @@ nav.closed a, nav.closed header {
 nav.closed footer button {
     transition-delay: 0s;
     transform: scaleY(1) scaleX(0.45);
+    -webkit-tap-highlight-color: transparent;
 }
 
 /*modification made for click oversized*/
