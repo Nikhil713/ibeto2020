@@ -171,7 +171,6 @@ nav.closed a, nav.closed header {
 nav.closed footer button {
     transition-delay: 0s;
     transform: scaleY(1) scaleX(0.45);
-    -webkit-tap-highlight-color: transparent;
 }
 
 /*modification made for click oversized*/
