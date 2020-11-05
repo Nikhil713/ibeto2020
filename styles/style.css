@@ -29,6 +29,7 @@ h3 {
     font-size: 1.5rem;
     /* color: #333; */
     font-weight: bold;
+    color: rgb(64,125,225);
 }
 
 section {
@@ -204,7 +205,8 @@ nav.closed footer button {
 .about-frame {
     height: 12rem;
     width: 12rem;
-    background-color: #4EC7E3;
+    /* background-color: #4EC7E3; */
+    background-color: rgb(64,125,225);
     margin: -3rem;
     position: absolute;
     z-index: -99;
@@ -276,8 +278,10 @@ nav.closed footer button {
 }
 
 .about-register {
-    background-color: #4e71e3;
-    box-shadow: 1px 1px 10px #4e71e3aa;
+    /* background-color: #4e71e3; */
+    background-color: rgb(64,125,225);
+    /* box-shadow: 1px 1px 10px #4e71e3aa; */
+    box-shadow: 1px 1px 10px rgb(64,125,225);
 }
 
 .about-register:hover {
@@ -734,6 +738,7 @@ nav.closed footer button {
 }
 
 .contact-img>img {
+    max-height: 9rem;
     max-width: 9rem;
     border-radius: 100%;
     margin: 1rem 0.5rem;
@@ -759,6 +764,7 @@ nav.closed footer button {
 
 .contact-links {
     font-size: 0.9rem !important;
+    white-space: nowrap;
 }
 
 .contact-links:hover {
