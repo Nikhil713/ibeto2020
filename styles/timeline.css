@@ -21,7 +21,7 @@ h1 {
   /*THE VERTICAL LINE OF THE TIMELINE EXCLUDING THE MAIN POINTS(i.e CIRCLES)*/
   list-style-type: none;
   position: relative;
-  width: 1px;
+  width: 1.3px;
   margin: 0 auto;
   padding-top: 70px;
   /* background:#4EC7E3bb; */
@@ -142,7 +142,7 @@ h1 {
     /*THE MAIN POINTS ON THE TIMELINE(i.e CIRCLES)*/
     width: 10px;
     height: 10px;
-    background: inherit;
+    background: rgb(64,123,255);
     bottom: 22%;
   }
   .timeline ul li:nth-child(odd) div {
