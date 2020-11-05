@@ -165,7 +165,8 @@ nav.closed a, nav.closed header {
     transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.75)) scaleY(0.1) scaleX(0.2);
     transition-delay: var(--delay-in);
     color: transparent;
-    box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.4);
+    /*box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.4);*/
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
 }
 
 nav.closed footer button {
