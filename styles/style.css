@@ -352,7 +352,7 @@ nav.closed footer button {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     padding: 3rem;
     /* -webkit-box-shadow: 0px 0px 14px -6px rgba(78, 199, 227, 1);
     -moz-box-shadow: 0px 0px 14px -6px rgba(78, 199, 227, 1);
