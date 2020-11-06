@@ -14,7 +14,10 @@ h1 {
   height: inherit;
   /* height: 100vh; */
   /* padding:2em; */
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+}
+.timeline{
+  padding-top: 50px;
 }
 
 .timeline ul li {
@@ -126,6 +129,7 @@ h1 {
     /* OUTER DIV ELEMENT -> TIMELINE CONTAINER*/
     /* background-color:whitesmoke;  */
     /* padding:0.5em; */
+    padding-bottom: 30px;
   }
   .timeline ul li {
     /*THE VERTICAL LINE OF THE TIMELINE EXCLUDING THE MAIN POINTS(i.e CIRCLES)*/
