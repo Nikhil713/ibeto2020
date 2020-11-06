@@ -351,6 +351,8 @@ nav.closed footer button {
     width: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 3rem;
     /* -webkit-box-shadow: 0px 0px 14px -6px rgba(78, 199, 227, 1);
     -moz-box-shadow: 0px 0px 14px -6px rgba(78, 199, 227, 1);
@@ -972,6 +974,11 @@ nav.closed footer button {
         color: #121212;
         transition: 0s;
     }
+
+    .event-format-image{
+        max-width: 30rem;
+    }
+
     /* problem-statements section */
     #problem-statements {
         min-height: 100vh;
