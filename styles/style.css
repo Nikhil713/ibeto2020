@@ -1079,8 +1079,8 @@ nav.closed footer button {
     }
     /* sponsor */
     .sponsor {
-        padding-top: 10vh;
-        padding-bottom: 5vh;
+        /* padding-top: 10vh; */
+        padding: 0;
     }
     .sponsor h1 {
         font-size: 2rem;
@@ -1092,7 +1092,7 @@ nav.closed footer button {
         align-items: center;
         /* grid-template-columns: 30% 30% 30%; */
         /* grid-column-gap: 5%; */
-        padding-top: 1vh;
+        padding-top: 0;
         /* padding-left: 7%; */
     }
     .title-sponsor{
