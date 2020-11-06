@@ -2,6 +2,9 @@ h1 {
   font-size: 2.5rem;
 }
 
+.timeline {
+  padding-top: 40px;
+}
 .timeline_container {
   /* OUTER DIV ELEMENT -> TIMELINE CONTAINER*/
   /*color:rgb(245, 245, 245);
@@ -112,6 +115,9 @@ h1 {
   h1 {
     font-size: 14vw;
     text-align: center;
+  }
+  .timeline {
+    padding-top: 0;
   }
   .timeline-header {
     margin-top: 0%;

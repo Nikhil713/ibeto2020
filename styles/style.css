@@ -21,7 +21,7 @@ body, html {
 
 h1 {
     font-size: 2rem;
-    color: #555;
+    /* color: #555; */
     font-weight: bold;
 }
 
@@ -498,7 +498,7 @@ nav.closed footer button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 
 .rewards-container {
