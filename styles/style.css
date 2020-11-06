@@ -975,9 +975,9 @@ nav.closed footer button {
         color: #121212;
         transition: 0s;
     }
-    .event-format-image {
+    /* .event-format-image {
         max-width: 20rem;
-    }
+    } */
     /* problem-statements section */
     #problem-statements {
         min-height: 100vh;
