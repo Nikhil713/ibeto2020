@@ -29,7 +29,7 @@ h3 {
     font-size: 1.5rem;
     /* color: #333; */
     font-weight: bold;
-    color: rgb(64,125,225);
+    color: rgb(64, 125, 225);
 }
 
 section {
@@ -206,7 +206,7 @@ nav.closed footer button {
     height: 12rem;
     width: 12rem;
     /* background-color: #4EC7E3; */
-    background-color: rgb(64,125,225);
+    background-color: rgb(64, 125, 225);
     margin: -3rem;
     position: absolute;
     z-index: -99;
@@ -279,9 +279,9 @@ nav.closed footer button {
 
 .about-register {
     /* background-color: #4e71e3; */
-    background-color: rgb(64,125,225);
+    background-color: rgb(64, 125, 225);
     /* box-shadow: 1px 1px 10px #4e71e3aa; */
-    box-shadow: 1px 1px 10px rgb(64,125,225);
+    box-shadow: 1px 1px 10px rgb(64, 125, 225);
 }
 
 .about-register:hover {
@@ -695,10 +695,38 @@ nav.closed footer button {
     }
 }
 
+/* sponsors */
+
+.sponsor {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.sponsor-container {
+    display: flex;
+    /* grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    /* padding-left: 10%; */
+}
+
+.title-sponsor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-sponsor img {
+    height: 50%;
+    width: 50%;
+}
+
 /* contacts  */
 
 #contacts {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1037,6 +1065,34 @@ nav.closed footer button {
         font-size: 3rem;
         font-weight: 500;
         margin: 2rem;
+    }
+    /* sponsor */
+    .sponsor {
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+    .sponsor h1 {
+        font-size: 2rem;
+    }
+    .sponsor-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* grid-template-columns: 30% 30% 30%; */
+        /* grid-column-gap: 5%; */
+        padding-top: 1vh;
+        /* padding-left: 7%; */
+    }
+    .title-sponsor{
+        display: flex;
+        justify-content: center;
+
+        padding: 30px 0;
+    }
+    .title-sponsor img {
+        height: auto;
+        width: 40%;
     }
     /* contact */
     .contact-container {
