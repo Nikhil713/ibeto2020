@@ -2,6 +2,9 @@ h1 {
   font-size: 2.5rem;
 }
 
+.timeline {
+  padding-top: 40px;
+}
 .timeline_container {
   /* OUTER DIV ELEMENT -> TIMELINE CONTAINER*/
   /*color:rgb(245, 245, 245);
@@ -14,18 +17,19 @@ h1 {
   height: inherit;
   /* height: 100vh; */
   /* padding:2em; */
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .timeline ul li {
   /*THE VERTICAL LINE OF THE TIMELINE EXCLUDING THE MAIN POINTS(i.e CIRCLES)*/
   list-style-type: none;
   position: relative;
-  width: 1px;
+  width: 1.3px;
   margin: 0 auto;
   padding-top: 70px;
   /* background:#4EC7E3bb; */
-  background: #4EC7E3;
+  /* background: #4EC7E3; */
+  background: black;
   word-wrap: break-word;
 }
 
@@ -40,7 +44,8 @@ h1 {
   height: 15px;
   border-radius: 50%;
   /* background:#4bc2de; */
-  background: #4EC7E3;
+  /* background: #4EC7E3; */
+  background: rgb(64,123,255);
   opacity: 1;
 }
 
@@ -59,9 +64,12 @@ h1 {
   /* -webkit-box-shadow: 0px 0px 15px -8px #4EC7E3; 
   -moz-box-shadow: 0px 0px 15px -8px #4EC7E3;
   box-shadow: 0px 0px 15px -8px #4EC7E3;change value of -8 to alter shadow */
-  -webkit-box-shadow: inset 0px 0px 6px -1px #4EC7E3;
+  /* -webkit-box-shadow: inset 0px 0px 6px -1px #4EC7E3;
   -moz-box-shadow: inset 0px 0px 6px -1px#4EC7E3;
-  box-shadow: inset 0px 0px 6px -1px #4EC7E3;
+  box-shadow: inset 0px 0px 6px -1px #4EC7E3; */
+  -webkit-box-shadow: inset 0px 0px 6px -1px grey;
+  -moz-box-shadow: inset 0px 0px 6px -1px grey;
+  box-shadow: inset 0px 0px 6px -1px grey;
 }
 
 .timeline ul li div::before {
@@ -108,6 +116,9 @@ h1 {
     font-size: 14vw;
     text-align: center;
   }
+  .timeline {
+    padding-top: 0;
+  }
   .timeline-header {
     margin-top: 0%;
     margin-left: 0%;
@@ -137,7 +148,7 @@ h1 {
     /*THE MAIN POINTS ON THE TIMELINE(i.e CIRCLES)*/
     width: 10px;
     height: 10px;
-    background: inherit;
+    background: rgb(64,123,255);
     bottom: 22%;
   }
   .timeline ul li:nth-child(odd) div {
