@@ -171,6 +171,7 @@ nav.closed a, nav.closed header {
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
     background-color: white;
     z-index:1;
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav.closed a:hover, nav.closed header:hover{
