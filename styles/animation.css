@@ -13,6 +13,13 @@
 .animation-window{
     overflow: hidden;
 }
+.animation-background{
+    background-image: url('../assets/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
 body{
     /* background-image: url('Background.svg'); */
     background-size: cover;
@@ -194,18 +201,23 @@ body{
     
 }
 @keyframes LeftWingAnimate {
-    0%{ transform: rotate3d(1,0,0,80deg);}
-    50%{ transform: rotate3d(1,0,0,20deg);}
-    100%{ transform: rotate3d(1,0,0,80deg);}
+    0%{ transform: scale(1) rotateX(60deg);
+        opacity:0.5;
+    }
+    50%{ transform: scale(1) rotateX(20deg) ;
+        opacity:1;     
+    }
+    100%{ transform:scale(1)  rotateX(60deg);
+        opacity:0.5;}
 }
 #Front_Wing{
     transform-origin: 40% 71%;
     animation: RightWingAnimate 3s ease-in-out infinite;
 }
 @keyframes RightWingAnimate {
-    0%{ transform: rotate3d(1,0,0,-60deg);}
+    0%{ transform: rotate3d(1,0,0,-80deg);}
     50%{ transform: rotate3d(1,0,0,-20deg);}
-    100%{ transform: rotate3d(1,0,0,-60deg);}
+    100%{ transform: rotate3d(1,0,0,-80deg);}
 }
 /* Text Animation */
 
@@ -300,15 +312,18 @@ body{
 }
 .animation-text{
     padding: 0 20px;
-    bottom: 10px;
+    bottom: 30px;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
+    font-weight: bold;
     z-index: 6;
+    color: rgb(0, 0, 0);
+
 }
 .scene-1 .posabs{
     width:600px;
