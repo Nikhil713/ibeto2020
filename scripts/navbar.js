@@ -49,7 +49,7 @@ var $els = $('.menu a, .menu header');
         $els.each(function(j){
             $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 25);
             $(this).css('--delay-in',j*.1+'s');
-            $(this).css('--delay-out',(count-j)*.1+'s');
+            $(this).css('--delay-out',(count-j)*.0005+'s');
             $(this).css('--left',$(this)[0].getBoundingClientRect().left - (document.documentElement.clientWidth));
 
             //works till here

@@ -179,14 +179,16 @@ nav.closed a:hover, nav.closed header:hover{
 
 nav.closed footer button {
     transition-delay: 0s;
-    transform: scaleY(1.5) scaleX(0.6);
+    transform: scaleY(1.55) scaleX(0.6);
     color:transparent;
     background-color: gainsboro;
     opacity:1;
     z-index:-5;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     right:-135px;
-    top:-12px;
+    top:-15px;
 }
 
 /*modification made for click oversized*/
