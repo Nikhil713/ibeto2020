@@ -806,7 +806,7 @@ nav.closed footer button {
 
 .contact-container {
     padding: 2rem 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 #info {
@@ -909,6 +909,14 @@ nav.closed footer button {
     -webkit-box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
     box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.34);
+    /*background: linear-gradient(140deg,#f2f2f2 32%,#4e71e3 32% 37%,#f2f2f2 37%);*/
+    /*background: linear-gradient(90deg, #f2f2f2 23%,#4e71e3 23% 28%,#f2f2f2 28%);*/
+    /*background: linear-gradient(90deg,white 26%,#f2f2f2 0%);*/
+    /*background: radial-gradient(at bottom right,white 65%,#f2f2f2 0%);*/
+    /*background: radial-gradient(circle at 195% 200%,white 85%,#f2f2f2 0%);*/
+    /*background: radial-gradient(circle at 120% 240%,white 77.5%,#f2f2f2 0%);----------try this---*/
+    /*background: radial-gradient(circle at 195% 200%,white 85%,#4e71e3 0%);*/
+    background: radial-gradient(circle at 120% 240%,white 77.5%,rgb(64, 123, 225) 0%);
 }
 
 .contact-img {
@@ -921,6 +929,8 @@ nav.closed footer button {
     max-width: 9rem;
     border-radius: 100%;
     margin: 1rem 0.5rem;
+    border-color: white;
+    border:solid white;
 }
 
 .contact-desc {
@@ -1404,5 +1414,11 @@ nav.closed footer button {
     #special-icon {
         height: 35px;
         width: 35px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .contact-cards {
+    background: radial-gradient(circle at 120% 240%,white 80%,rgb(64, 125, 225) 0%);
     }
 }
