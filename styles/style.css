@@ -793,6 +793,7 @@ nav.closed footer button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 28rem;
 }
 
 .title-sponsor img {
@@ -800,8 +801,12 @@ nav.closed footer button {
     width: 50%;
 }
 
+.ieee {
+    margin-left: 3rem !important;
+}
 .HAC { 
-    width: 28rem;
+    /* width: 28rem; */
+    /* padding-left: 5rem; */
 }
 
 /* contacts  */
