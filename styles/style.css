@@ -1147,7 +1147,8 @@ nav.closed footer button {
         transition: 0s;
     }
     .event-format-image {
-        /* max-width: 30rem; */
+        /* width: 30rem;
+        height: 30rem; */
     }
     /* problem-statements section */
     #problem-statements {
