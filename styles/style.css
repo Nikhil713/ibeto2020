@@ -4,6 +4,54 @@
     font-family: Montserrat, sans-serif;
 }
 
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 999999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(64, 125, 225);
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
 body, html {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /* font-size: 1rem; */
@@ -68,7 +116,8 @@ nav a {
     /*background: #fff;*/
     /*changed on 6th may*/
     /*background: rgb(255, 255, 255); removed on OCT 31*/
-    background: white;/*rgb(234, 255, 255);*/
+    background: white;
+    /*rgb(234, 255, 255);*/
     /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
@@ -79,7 +128,7 @@ nav a {
     /*6th may evening*/
     color: black;
     /*box-shadow: 0 10px 15px 2px rgba(47, 196, 255, 0.4);      removed on OCT 31*/
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0, 0.4);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
     /*added on OCT 31*/
 }
 
@@ -118,7 +167,8 @@ nav header {
     /*background: rgba(255, 255, 255, 0.5); */
     /*changed on 6th may*/
     /*background: white;  removed on OCT 31*/
-    background: white;/*rgb(255, 239, 234);
+    background: white;
+    /*rgb(255, 239, 234);
     /*added on OCT 31*/
     /*changed on 6th may*/
     transform-origin: 0 0;
@@ -130,7 +180,7 @@ nav header {
     
     box-shadow:20px 20px 25px rgb(47,196,255);*/
     /*box-shadow: 0 10px 15px 2px rgba(47, 196, 255, 0.4);      removed on OCT 31*/
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0, 0.4);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
     /*added on OCT 31*/
     -webkit-tap-highlight-color: transparent;
 }
@@ -168,14 +218,7 @@ nav.closed a, nav.closed header {
     transition-delay: var(--delay-in);
     color: transparent;
     /*box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.4);*/
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
-    background-color: white;
-    z-index:1;
-    -webkit-tap-highlight-color: transparent;
-}
-
-nav.closed a:hover, nav.closed header:hover{
-    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
 nav.closed footer button {
@@ -396,7 +439,7 @@ nav.closed footer button {
 }
 
 .event-format-header, .event-format-subheader, .event-format-body {
-    padding: 1.5rem 0;
+    padding: 0.75rem 0;
 }
 
 .event-format-body {
@@ -577,10 +620,11 @@ nav.closed footer button {
 }
 
 .area {
-    background: #4EC7E3;
+    /* background: #4EC7E3; */
     /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
+    z-index: -1;
 }
 
 .context {
@@ -596,16 +640,16 @@ nav.closed footer button {
 
 .context h1 {
     text-align: center;
-    color: #fff;
-    font-size: 5rem;
+    /* color: #fff; */
+    /* font-size: 5rem; */
     font-weight: 500;
     margin: 3rem;
 }
 
 .context h2 {
     text-align: center;
-    color: #fff;
-    font-size: 2rem;
+    /* color: #fff; */
+    /* font-size: 2rem; */
     font-weight: 500;
     margin: 1rem;
 }
@@ -735,7 +779,7 @@ nav.closed footer button {
     /* padding-left: 10%; */
 }
 
-.title-sponsor{
+.title-sponsor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -760,6 +804,87 @@ nav.closed footer button {
 
 .contact-container {
     padding: 2rem 1rem;
+    padding-bottom: 5rem;
+}
+
+#info {
+    background-color: #f2f2f2f2;
+    padding: 2rem 0;
+}
+
+.row {
+    width: 100%;
+    /* max-width: 45rem; */
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem 7rem 1rem;
+    background-color: white;
+    position: relative;
+    color: !important;
+    width: 300px;
+    /* box-shadow: 10px 10px 10px 10px rgb(64, 125, 225); */
+}
+
+.card:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid #3B3C36;
+    border-left: 20px solid #3B3C36;
+    border-right: 20px solid white;
+    border-top: 20px solid white;
+    position: absolute;
+    -webkit-filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+.card:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #3B3C36;
+    border-right: 40px solid #3B3C36;
+    border-left: 40px solid white;
+    border-bottom: 40px solid white;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    -webkit-filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+}
+
+.card:nth-of-type(1) {
+    /* margin-right: 9%; */
+}
+
+.card h2 {
+    color: snow;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    color: snow;
+    font-size: 1.1rem;
+    line-height: 140%;
 }
 
 .contact-row {
@@ -770,6 +895,7 @@ nav.closed footer button {
 }
 
 .contact-cards {
+    z-index: 1;
     width: 30rem;
     margin: 1rem 3rem;
     padding: 1rem 4rem;
@@ -991,11 +1117,9 @@ nav.closed footer button {
         color: #121212;
         transition: 0s;
     }
-
-    .event-format-image{
+    .event-format-image {
         /* max-width: 30rem; */
     }
-
     /* problem-statements section */
     #problem-statements {
         min-height: 100vh;
@@ -1112,10 +1236,9 @@ nav.closed footer button {
         padding-top: 0;
         /* padding-left: 7%; */
     }
-    .title-sponsor{
+    .title-sponsor {
         display: flex;
         justify-content: center;
-
         padding: 30px 0;
     }
     .title-sponsor img {
@@ -1182,13 +1305,11 @@ nav.closed footer button {
 .footerDiv {
     width: 100%;
     max-width: 100vw;
-    height: 25vh;
+    height: 20vh;
     padding-top: 1em;
     background-color: #333;
     display: grid;
-    grid-template-areas:
-        "ibeto icon1 icon2 icon3 excel"
-        ". brand brand brand .";
+    grid-template-areas: "ibeto icon1 icon2 icon3 excel" ". brand brand brand .";
 }
 
 .footerIbeto {
@@ -1231,6 +1352,7 @@ nav.closed footer button {
     align-self: center;
     justify-self: center;
     color: white;
+    font-size: 1rem;
 }
 
 .Excelbrand-text {
@@ -1258,31 +1380,27 @@ nav.closed footer button {
     height: 5em;
 }
 
-@media only screen and (max-width: 500px){
-.footerDiv {
-    grid-template-areas:
-        "ibeto . . . excel"
-        ". icon1 icon2 icon3 ."
-        ". brand brand brand .";
-    height: 180px;
-    padding-top: 15px;
-    font-size: 12px;
-}
-.Excelbrand-text {
-    margin-left: 0;
+@media only screen and (max-width: 500px) {
+    .footerDiv {
+        grid-template-areas: "ibeto . . . excel" ". icon1 icon2 icon3 ." ". brand brand brand .";
+        height: 180px;
+        padding-top: 15px;
+        font-size: 12px;
+    }
+    .Excelbrand-text {
+        margin-left: 0;
+    }
 }
 
+@media only screen and (max-width: 500px) {
+    .footerDiv img {
+        height: 42px;
+    }
 }
 
-@media only screen and (max-width: 500px){
-.footerDiv img {
-    height: 42px;
-}
-}
-
-@media only screen and (max-width: 500px){
-#special-icon {
-    height: 35px;
-    width: 35px;
-}
+@media only screen and (max-width: 500px) {
+    #special-icon {
+        height: 35px;
+        width: 35px;
+    }
 }
