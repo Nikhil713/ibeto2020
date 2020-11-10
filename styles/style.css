@@ -213,7 +213,8 @@ nav footer button {
 }
 
 nav.closed a, nav.closed header {
-    transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.75)) scaleY(0.1) scaleX(0.2);
+    /*transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.75)) scaleY(0.1) scaleX(0.2); removed on 7th November*/
+    transform: translateY(calc(var(--top) * -1)) translateX(calc(var(--left)* -0.70)) scaleY(0.075) scaleX(0.175);
     transition-delay: var(--delay-in);
     color: transparent;
     /*box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.4);*/
@@ -222,7 +223,16 @@ nav.closed a, nav.closed header {
 
 nav.closed footer button {
     transition-delay: 0s;
-    transform: scaleY(1) scaleX(0.45);
+    transform: scaleY(1.55) scaleX(0.6);
+    color:transparent;
+    background-color: gainsboro;
+    opacity:1;
+    z-index:-5;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    right:-135px;
+    top:-15px;
 }
 
 /*modification made for click oversized*/
