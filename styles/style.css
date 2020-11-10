@@ -1166,6 +1166,7 @@ nav.closed footer button {
         width: auto;
         text-align: center;
         padding: 0;
+        padding-top: 50px;
     }
     .problem-statements-image {
         padding: 0;
@@ -1273,6 +1274,9 @@ nav.closed footer button {
     .title-sponsor img {
         height: auto;
         width: 40%;
+    }
+    .ieee{
+        margin-left: 0 !important;
     }
     /* contact */
     .contact-container {
