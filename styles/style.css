@@ -461,12 +461,15 @@ nav.closed footer button {
 
 .problem-statements-container {
     display: flex;
-    padding: 4rem 4rem;
-    margin: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 4rem 1rem;
+    margin: 0 1rem;
 }
 
 .problem-statements-text {
-    width: 60rem;
+    width: 65rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -478,7 +481,7 @@ nav.closed footer button {
 .problem-statements-header>h2 {
     font-size: 2.5rem;
     font-weight: 500;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
 }
 
 .problem-statements-header>h3 {
@@ -490,11 +493,15 @@ nav.closed footer button {
 }
 
 .problem-statements-image {
-    padding: 4rem 6rem;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .problem-statements-icon {
     max-width: 22rem;
+    padding-top: 3rem;
 }
 
 .problem-statements-list {
@@ -555,12 +562,13 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    /* min-height: 70vh; */
+    min-height: 70vh;
     /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 2rem 0; */
+    background: #f2f2f2;
 }
 
 .rewards-container {
