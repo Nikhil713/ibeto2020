@@ -333,13 +333,13 @@ nav.closed footer button {
 .about-buttons a {
     color: white;
     text-decoration: none;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .about-buttons div {
     padding: 1rem;
     margin: 0 1rem;
-    min-width: 7rem;
+    width: 7rem;
     height: max-content;
     border-radius: 4px;
     /* transition-duration: 0.3s; */
@@ -347,6 +347,7 @@ nav.closed footer button {
 
 .about-register {
     /* background-color: #4e71e3; */
+    text-align: center;
     background-color: rgb(64, 125, 225);
     /* box-shadow: 1px 1px 10px #4e71e3aa; */
     box-shadow: 1px 1px 10px rgb(64, 125, 225);
