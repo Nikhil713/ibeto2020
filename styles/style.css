@@ -334,6 +334,7 @@ nav.closed footer button {
     color: white;
     text-decoration: none;
     z-index: 100;
+    -webkit-tap-highlight-color: transparent;
     /* margin-left: 1rem; */
 }
 
@@ -344,6 +345,7 @@ nav.closed footer button {
     height: max-content;
     border-radius: 4px;
     z-index: 100;
+    -webkit-tap-highlight-color: transparent;
     /* transition-duration: 0.3s; */
 }
 
