@@ -8,7 +8,7 @@ requestAnimationFrame(()=>{
   var textArray = [
     "Puzzled?", 
     "Confused?",
-    "Unsure about the future?"
+    "Unsure about the pace the world travels at right?"
   ];
   
   // Speed (in milliseconds) of typing.
@@ -170,7 +170,7 @@ requestAnimationFrame(()=>{
       })
     },10200);
     })
-    },7000)
+    },9000)
     
   })
   
