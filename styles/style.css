@@ -452,7 +452,7 @@ nav.closed footer button {
 
 #problem-statements {
     height: auto;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -562,7 +562,7 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
