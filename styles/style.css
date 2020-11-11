@@ -92,7 +92,7 @@ nav {
     position: fixed;
     width: 220px;
     margin: 20px;
-    z-index: 10;
+    z-index: 100;
     right: 0;
     /*added on 12th may*/
     transition-delay: .9s;
@@ -139,6 +139,7 @@ nav a:hover {
 /*added on 12th may*/
 
 nav.closed {
+    z-index: 10;
     border-radius: unset;
     border-style: unset;
     border-color: unset;
@@ -333,7 +334,7 @@ nav.closed footer button {
 .about-buttons a {
     color: white;
     text-decoration: none;
-    z-index: 100;
+    z-index: 50;
     -webkit-tap-highlight-color: transparent;
     /* margin-left: 1rem; */
 }
@@ -344,7 +345,7 @@ nav.closed footer button {
     width: 7rem;
     height: max-content;
     border-radius: 4px;
-    z-index: 100;
+    z-index: 50;
     -webkit-tap-highlight-color: transparent;
     /* transition-duration: 0.3s; */
 }
@@ -978,7 +979,7 @@ nav.closed footer button {
 .contact-links {
     font-size: 0.9rem !important;
     white-space: nowrap;
-    z-index: 100;
+    z-index: 50;
 }
 
 .contact-links:hover {
@@ -1201,7 +1202,7 @@ nav.closed footer button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 100;
+        z-index: 50;
     }
     .problem-statements-buttons a{
         margin: 10px 0;
