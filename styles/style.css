@@ -331,6 +331,8 @@ nav.closed footer button {
 }
 
 .about-buttons a {
+    color: white;
+    text-decoration: none;
     margin-left: 1rem;
 }
 
@@ -519,9 +521,10 @@ nav.closed footer button {
     padding: 1rem 0;
 }
 
-/* .problem-statements-buttons a {
-    margin-left: 1rem;
-} */
+.problem-statements-buttons a {
+    color: white;
+    text-decoration: none;
+}
 
 .problem-statements-buttons div {
     display: flex;
