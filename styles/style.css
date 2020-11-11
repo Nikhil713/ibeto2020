@@ -333,6 +333,7 @@ nav.closed footer button {
 .about-buttons a {
     color: white;
     text-decoration: none;
+    z-index: 100;
     /* margin-left: 1rem; */
 }
 
@@ -342,6 +343,7 @@ nav.closed footer button {
     width: 7rem;
     height: max-content;
     border-radius: 4px;
+    z-index: 100;
     /* transition-duration: 0.3s; */
 }
 
@@ -1195,6 +1197,12 @@ nav.closed footer button {
     }
     .problem-statements-buttons {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .problem-statements-buttons a{
+        margin: 10px 0;
     }
     .problem-statements-header>h3 {
         font-size: 1.2rem;
