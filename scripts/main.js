@@ -8,7 +8,7 @@ requestAnimationFrame(()=>{
   var textArray = [
     "Puzzled?", 
     "Confused?",
-    "Unsure about the pace the world travels at right?"
+    "Unsure about the pace the world travels at right now?"
   ];
   
   // Speed (in milliseconds) of typing.
