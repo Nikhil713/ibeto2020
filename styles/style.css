@@ -452,7 +452,7 @@ nav.closed footer button {
 
 #problem-statements {
     height: auto;
-    /* min-height: 100vh; */
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,12 +464,12 @@ nav.closed footer button {
     justify-content: center;
     align-items: center;
     width: auto;
-    padding: 4rem 1rem;
-    margin: 0 1rem;
+    padding: 4rem 4rem;
+    margin: 0 2rem;
 }
 
 .problem-statements-text {
-    width: 65rem;
+    width: 60rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -481,7 +481,7 @@ nav.closed footer button {
 .problem-statements-header>h2 {
     font-size: 2.5rem;
     font-weight: 500;
-    padding: 0rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .problem-statements-header>h3 {
@@ -562,13 +562,13 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    min-height: 70vh;
+    min-height: 80vh;
     /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 2rem 0; */
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
 }
 
 .rewards-container {
@@ -849,7 +849,7 @@ nav.closed footer button {
     padding: 4rem 1rem 7rem 1rem;
     background-color: white;
     position: relative;
-    color: !important;
+    /* color: !important; */
     width: 300px;
     /* box-shadow: 10px 10px 10px 10px rgb(64, 125, 225); */
 }
@@ -1131,15 +1131,16 @@ nav.closed footer button {
     }
     .event-format-header {
         font-size: 1.6rem;
-        padding: 1rem 0;
+        padding-top: 0 !important;
+        padding-bottom: 1rem;
     }
     .event-format-subheader {
         font-size: 1.4rem;
-        padding: 1rem 0;
+        padding: 0;
     }
     .event-format-body {
         font-size: 15px;
-        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        padding: 1.5rem 1rem 2rem 1rem;
     }
     .event-format-card :hover {
         background-color: white;
@@ -1147,6 +1148,7 @@ nav.closed footer button {
         transition: 0s;
     }
     .event-format-image {
+        padding: 1rem;
         /* width: 30rem;
         height: 30rem; */
     }
@@ -1177,7 +1179,8 @@ nav.closed footer button {
         align-items: center;
     }
     .problem-statements-icon {
-        max-width: 12rem;
+        max-width: 14rem;
+        padding-top: 0;
     }
     .problem-statements-list {
         text-align: left;
