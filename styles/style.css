@@ -977,6 +977,7 @@ nav.closed footer button {
 .contact-links {
     font-size: 0.9rem !important;
     white-space: nowrap;
+    z-index: 100;
 }
 
 .contact-links:hover {
