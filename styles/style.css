@@ -1053,6 +1053,9 @@ nav.closed footer button {
 
 @media only screen and (max-width: 1220px) {
     /* about section  */
+    .no-mob{
+        display: none;
+    }
     #about-section {
         height: auto;
     }
