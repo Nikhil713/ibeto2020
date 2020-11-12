@@ -1450,6 +1450,9 @@ nav.closed footer button {
     .Excelbrand-text {
         margin-left: 0;
     }
+    .Excelbrand span{
+        font-size: 14px !important;
+    }
 }
 
 @media only screen and (max-width: 500px) {
