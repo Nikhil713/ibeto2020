@@ -3,7 +3,11 @@ h1 {
 }
 
 span {
-  font-size: 1.25rem;
+  font-size: 19px;
+}
+
+.timeline h3 {
+  font-size: 20px;
 }
 .timeline {
   padding-top: 40px;
@@ -29,7 +33,7 @@ span {
   position: relative;
   width: 1.3px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 20px;
   /* background:#4EC7E3bb; */
   /* background: #4EC7E3; */
   background: black;
@@ -41,7 +45,7 @@ span {
   content: '';
   position: absolute;
   left: 40%;
-  bottom: 27%;
+  bottom: 37%;
   transform: translateX(-50%);
   width: 15px;
   height: 15px;
@@ -57,8 +61,8 @@ span {
   position: relative;
   bottom: 0;
   height: auto;
-  width: 20vw;
-  padding: 1.5vw;
+  width: 23vw;
+  padding: 1.75vw;
   font-size: 1.5rem;
   box-sizing: border-box;
   text-align: center;
@@ -101,7 +105,7 @@ span {
 
 .timeline ul li:nth-child(even) div {
   /*POSITION OF THE ENTIRE DIV ELEMENTS ON THE LEFT*/
-  left: -21.75vw;
+  left: -25.5vw;
   /* background-image:linear-gradient(to right,rgba(47,196,255,0.5),rgb(47, 196, 255)); */
 }
 
@@ -143,8 +147,12 @@ span {
     margin-left: 20px;
     /* padding-top:2em; */
   }
-  .timeline ul li div {
-    font-size: 1rem;
+  .timeline ul li div > h3{
+    font-size: 18px !important;
+    /* background-color: white; */
+  }
+  .timeline ul li div > span{
+    font-size: 15px !important;
     /* background-color: white; */
   }
   .timeline ul li::after {
@@ -152,7 +160,7 @@ span {
     width: 10px;
     height: 10px;
     background: rgb(64,123,255);
-    bottom: 22%;
+    bottom: 38%;
   }
   .timeline ul li:nth-child(odd) div {
     /*POSITION OF THE ENTIRE DIV ELEMENTS ON THE RIGHT*/
@@ -194,7 +202,7 @@ span {
   }
   .timeline ul li div {
     /*ALL THE DIV ELEMENTS CONTAINING THE DATES EXCLUDING THE ARROW HEADS POINTNG TO THE CIRCLES*/
-    width: 60vw;
+    width: 70vw;
     height: inherit;
   }
 }
