@@ -86,11 +86,14 @@ section {
 
 /* navbar */
 
+.menu header{
+    text-align: center;
+}
 nav {
     --duration: .2s;
     --easing: ease-in-out;
     position: fixed;
-    width: 220px;
+    width: 210px;
     margin: 20px;
     z-index: 100;
     right: 0;
@@ -111,6 +114,7 @@ nav li {
 }
 
 nav a {
+    font-size: 15px;
     display: block;
     text-decoration: none;
     /*background: #fff;*/
