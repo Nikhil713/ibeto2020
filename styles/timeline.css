@@ -29,7 +29,7 @@ span {
   position: relative;
   width: 1.3px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 20px;
   /* background:#4EC7E3bb; */
   /* background: #4EC7E3; */
   background: black;
@@ -41,7 +41,7 @@ span {
   content: '';
   position: absolute;
   left: 40%;
-  bottom: 27%;
+  bottom: 37%;
   transform: translateX(-50%);
   width: 15px;
   height: 15px;
