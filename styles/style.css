@@ -87,13 +87,13 @@ section {
 /* navbar */
 
 .menu header{
-    text-align: center;
+    /* text-align: center; */
 }
 nav {
     --duration: .2s;
     --easing: ease-in-out;
     position: fixed;
-    width: 210px;
+    width: 220px;
     margin: 20px;
     z-index: 100;
     right: 0;
