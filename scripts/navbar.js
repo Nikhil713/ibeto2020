@@ -57,3 +57,19 @@ var $els = $('.menu a, .menu header');
         });
         $('.menu').toggleClass('closed');
     });
+
+    $(document).click(function(e) {
+            if (!$("nav").hasClass("closed")){
+            if (!$(e.target).is('.nav a')){
+            $els.each(function(j){
+                $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 25);
+                $(this).css('--delay-in',j*.05+'s');
+                $(this).css('--delay-out',(count-j)*.0005+'s');
+                $(this).css('--left',$(this)[0].getBoundingClientRect().left - (document.documentElement.clientWidth));
+    
+                //works till here
+                $(this).css('--ntop',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -8.5) - 15);
+            });
+            $('.menu').toggleClass('closed');	    
+        }}
+    });
