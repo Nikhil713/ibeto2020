@@ -86,13 +86,16 @@ section {
 
 /* navbar */
 
+.menu header{
+    /* text-align: center; */
+}
 nav {
     --duration: .2s;
     --easing: ease-in-out;
     position: fixed;
     width: 220px;
     margin: 20px;
-    z-index: 10;
+    z-index: 100;
     right: 0;
     /*added on 12th may*/
     transition-delay: .9s;
@@ -111,6 +114,7 @@ nav li {
 }
 
 nav a {
+    font-size: 15px;
     display: block;
     text-decoration: none;
     /*background: #fff;*/
@@ -139,6 +143,7 @@ nav a:hover {
 /*added on 12th may*/
 
 nav.closed {
+    z-index: 10;
     border-radius: unset;
     border-style: unset;
     border-color: unset;
@@ -331,20 +336,27 @@ nav.closed footer button {
 }
 
 .about-buttons a {
-    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    z-index: 50;
+    -webkit-tap-highlight-color: transparent;
+    /* margin-left: 1rem; */
 }
 
 .about-buttons div {
     padding: 1rem;
     margin: 0 1rem;
-    min-width: 7rem;
+    width: 7rem;
     height: max-content;
     border-radius: 4px;
+    z-index: 50;
+    -webkit-tap-highlight-color: transparent;
     /* transition-duration: 0.3s; */
 }
 
 .about-register {
     /* background-color: #4e71e3; */
+    text-align: center;
     background-color: rgb(64, 125, 225);
     /* box-shadow: 1px 1px 10px #4e71e3aa; */
     box-shadow: 1px 1px 10px rgb(64, 125, 225);
@@ -384,7 +396,7 @@ nav.closed footer button {
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin: 10%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: auto;
 }
 
@@ -452,7 +464,7 @@ nav.closed footer button {
 
 #problem-statements {
     height: auto;
-    /* min-height: 100vh; */
+    /* min-height: 90vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,6 +473,9 @@ nav.closed footer button {
 
 .problem-statements-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     padding: 4rem 4rem;
     margin: 0 2rem;
 }
@@ -485,21 +500,25 @@ nav.closed footer button {
     font-weight: 400;
     /* color: #555; */
     color: black;
-    font-size: 1.5rem;
+    font-size: 20px;
     padding-right: 6rem;
 }
 
 .problem-statements-image {
-    padding: 4rem 6rem;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .problem-statements-icon {
     max-width: 22rem;
+    padding-top: 3rem;
 }
 
 .problem-statements-list {
     padding: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 18px;
 }
 
 .problem-statements-list li {
@@ -512,9 +531,10 @@ nav.closed footer button {
     padding: 1rem 0;
 }
 
-/* .problem-statements-buttons a {
-    margin-left: 1rem;
-} */
+.problem-statements-buttons a {
+    color: white;
+    text-decoration: none;
+}
 
 .problem-statements-buttons div {
     display: flex;
@@ -555,12 +575,13 @@ nav.closed footer button {
 
 #rewards {
     height: auto;
-    /* min-height: 70vh; */
+    /* min-height: 80vh; */
     /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 2rem 0; */
+    /* background: #f2f2f2; */
 }
 
 .rewards-container {
@@ -785,11 +806,20 @@ nav.closed footer button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 28rem;
 }
 
 .title-sponsor img {
     height: 50%;
     width: 50%;
+}
+
+.ieee {
+    margin-left: 3rem !important;
+}
+.HAC { 
+    /* width: 28rem; */
+    /* padding-left: 5rem; */
 }
 
 /* contacts  */
@@ -832,7 +862,7 @@ nav.closed footer button {
     padding: 4rem 1rem 7rem 1rem;
     background-color: white;
     position: relative;
-    color: !important;
+    /* color: !important; */
     width: 300px;
     /* box-shadow: 10px 10px 10px 10px rgb(64, 125, 225); */
 }
@@ -897,7 +927,6 @@ nav.closed footer button {
 }
 
 .contact-cards {
-    z-index: 1;
     width: 30rem;
     margin: 1rem 3rem;
     padding: 1rem 4rem;
@@ -944,16 +973,17 @@ nav.closed footer button {
     padding: 5px 0;
     color: black;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 19px;
 }
 
 .designation {
-    font-size: 1rem !important;
+    font-size: 15px !important;
 }
 
 .contact-links {
     font-size: 0.9rem !important;
     white-space: nowrap;
+    z-index: 50;
 }
 
 .contact-links:hover {
@@ -1036,6 +1066,9 @@ nav.closed footer button {
 
 @media only screen and (max-width: 1220px) {
     /* about section  */
+    .no-mob{
+        display: none;
+    }
     #about-section {
         height: auto;
     }
@@ -1099,6 +1132,7 @@ nav.closed footer button {
         grid-template-columns: repeat(1, 1fr);
         /* padding: 1rem; */
         grid-gap: 5rem;
+        margin-top: 0;
     }
     .event-format-header>h3 {
         font-size: 25px;
@@ -1107,22 +1141,23 @@ nav.closed footer button {
         font-size: 20px;
     }
     .event-format-card {
-        margin-top: 1.5rem;
+        /* margin-top: 1.5rem; */
         /* min-height: 30rem; */
         height: auto;
         line-height: 2rem;
     }
     .event-format-header {
         font-size: 1.6rem;
-        padding: 1rem 0;
+        padding-top: 0 !important;
+        padding-bottom: 1rem;
     }
     .event-format-subheader {
         font-size: 1.4rem;
-        padding: 1rem 0;
+        padding: 0;
     }
     .event-format-body {
         font-size: 15px;
-        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        padding: 1.5rem 1rem 2rem 1rem;
     }
     .event-format-card :hover {
         background-color: white;
@@ -1130,7 +1165,9 @@ nav.closed footer button {
         transition: 0s;
     }
     .event-format-image {
-        /* max-width: 30rem; */
+        padding: 1rem;
+        /* width: 30rem;
+        height: 30rem; */
     }
     /* problem-statements section */
     #problem-statements {
@@ -1149,6 +1186,7 @@ nav.closed footer button {
         width: auto;
         text-align: center;
         padding: 0;
+        padding-top: 50px;
     }
     .problem-statements-image {
         padding: 0;
@@ -1158,13 +1196,20 @@ nav.closed footer button {
         align-items: center;
     }
     .problem-statements-icon {
-        max-width: 12rem;
+        max-width: 14rem;
+        padding-top: 0;
     }
     .problem-statements-list {
         text-align: left;
     }
     .problem-statements-buttons {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
+    .problem-statements-buttons a{
+        margin: 10px 0;
     }
     .problem-statements-header>h3 {
         font-size: 1.2rem;
@@ -1256,6 +1301,9 @@ nav.closed footer button {
     .title-sponsor img {
         height: auto;
         width: 40%;
+    }
+    .ieee{
+        margin-left: 0 !important;
     }
     /* contact */
     .contact-container {
@@ -1382,8 +1430,8 @@ nav.closed footer button {
 }
 
 #special-icon {
-    height: 50px;
-    width: 50px;
+    /* height: 50px; */
+    /* width: 42px; */
 }
 
 .footerExcel img {
@@ -1412,8 +1460,8 @@ nav.closed footer button {
 
 @media only screen and (max-width: 500px) {
     #special-icon {
-        height: 35px;
-        width: 35px;
+        height: 42px;
+        /* width: 35px; */
     }
 }
 
