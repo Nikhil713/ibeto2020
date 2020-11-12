@@ -147,7 +147,6 @@ nav.closed {
     border-radius: unset;
     border-style: unset;
     border-color: unset;
-    height:0;
 }
 
 nav.closed a:hover {
