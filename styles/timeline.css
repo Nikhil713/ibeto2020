@@ -3,7 +3,11 @@ h1 {
 }
 
 span {
-  font-size: 1.25rem;
+  font-size: 19px;
+}
+
+.timeline h3 {
+  font-size: 20px;
 }
 .timeline {
   padding-top: 40px;
