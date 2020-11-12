@@ -396,6 +396,7 @@ nav.closed footer button {
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin: 10%;
+    margin-bottom: 50px !important;
     /* margin-top: 50px; */
     width: auto;
 }
