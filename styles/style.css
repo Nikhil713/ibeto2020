@@ -86,9 +86,6 @@ section {
 
 /* navbar */
 
-.menu header{
-    /* text-align: center; */
-}
 nav {
     --duration: .2s;
     --easing: ease-in-out;
@@ -98,7 +95,8 @@ nav {
     z-index: 100;
     right: 0;
     /*added on 12th may*/
-    transition-delay: 0s;/*fixed this for the little left shift at the end of opening*/
+    transition-delay: 0s;
+    /*fixed this for the little left shift at the end of opening*/
     border-style: solid;
     border-color: transparent;
 }
@@ -363,6 +361,23 @@ nav.closed footer button {
 }
 
 .about-register:hover {
+    background-color: #4ebbe3;
+    box-shadow: 5px 5px 20px #4ebbe3bb;
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+
+.about-register2 {
+    /* background-color: #4e71e3; */
+    text-align: center;
+    background-color: rgb(64, 125, 225);
+    /* box-shadow: 1px 1px 10px #4e71e3aa; */
+    box-shadow: 1px 1px 10px rgb(64, 125, 225);
+    white-space: nowrap;
+    width: auto !important;
+}
+
+.about-register2:hover {
     background-color: #4ebbe3;
     box-shadow: 5px 5px 20px #4ebbe3bb;
     /* transform: scale(1.1); */
@@ -635,14 +650,20 @@ nav.closed footer button {
 #ibetojr {
     min-height: 50vh;
     height: auto;
-    /* width: 100%; */
-    /* background: #4ebbe3bb; */
+    /* width: 100%;
+    background: #4ebbe3bb; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.ibetojr-content {
+    padding: 1rem 25rem;
+    line-height: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
 .area {
     /* background: #4EC7E3; */
     /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
@@ -818,10 +839,6 @@ nav.closed footer button {
 .ieee {
     margin-left: 3rem !important;
 }
-.HAC { 
-    /* width: 28rem; */
-    /* padding-left: 5rem; */
-}
 
 /* contacts  */
 
@@ -902,10 +919,6 @@ nav.closed footer button {
     margin-right: 10%;
 }
 
-.card:nth-of-type(1) {
-    /* margin-right: 9%; */
-}
-
 .card h2 {
     color: snow;
     margin-bottom: 1rem;
@@ -946,7 +959,7 @@ nav.closed footer button {
     /*background: radial-gradient(circle at 195% 200%,white 85%,#f2f2f2 0%);*/
     /*background: radial-gradient(circle at 120% 240%,white 77.5%,#f2f2f2 0%);----------try this---*/
     /*background: radial-gradient(circle at 195% 200%,white 85%,#4e71e3 0%);*/
-    background: radial-gradient(circle at 120% 240%,white 77.5%,rgb(64, 123, 225) 0%);
+    background: radial-gradient(circle at 120% 240%, white 77.5%, rgb(64, 123, 225) 0%);
 }
 
 .contact-img {
@@ -960,7 +973,7 @@ nav.closed footer button {
     border-radius: 100%;
     margin: 1rem 0.5rem;
     border-color: white;
-    border:solid white;
+    border: solid white;
 }
 
 .contact-desc {
@@ -1016,6 +1029,17 @@ nav.closed footer button {
     }
 }
 
+@media only screen and (max-width:1500px) {
+    .ibetojr-content {
+        padding: 0 10rem;
+        line-height: 2rem;
+        /* font-size: 1rem; */
+        text-align: center;
+    }
+    .ibetojr-content{
+        margin: 15px 0;
+    }
+}    
 @media only screen and (min-width:1220px) and (max-width: 1370px) {
     .about-text {
         min-width: 40rem;
@@ -1033,9 +1057,6 @@ nav.closed footer button {
         padding: 3rem;
         width: auto;
         height: 18rem;
-    }
-    .about-buttons div {
-        margin: 0rem;
     }
     .problem-statements-image {
         padding: 4rem 0rem;
@@ -1057,6 +1078,15 @@ nav.closed footer button {
     .rewards-text {
         width: 50rem;
     }
+    .ibetojr-content {
+        padding: 0 5rem;
+        line-height: 2rem;
+        /* font-size: 1rem; */
+        text-align: center;
+    }
+    .ibetojr-content{
+        margin: 15px 0;
+    }
     .contact-cards {
         width: 25rem;
     }
@@ -1067,7 +1097,7 @@ nav.closed footer button {
 
 @media only screen and (max-width: 1220px) {
     /* about section  */
-    .no-mob{
+    .no-mob {
         display: none;
     }
     #about-section {
@@ -1118,6 +1148,7 @@ nav.closed footer button {
     .about-buttons a {
         margin-left: 0;
         font-size: 17px;
+        margin: 1rem 0;
     }
     /* event-format section  */
     #event-format {
@@ -1209,7 +1240,7 @@ nav.closed footer button {
         align-items: center;
         z-index: 50;
     }
-    .problem-statements-buttons a{
+    .problem-statements-buttons a {
         margin: 10px 0;
     }
     .problem-statements-header>h3 {
@@ -1271,10 +1302,16 @@ nav.closed footer button {
     /* ibeto jr */
     .context h1 {
         text-align: center;
-        color: #fff;
+        /* color: #fff; */
         font-size: 3rem;
         font-weight: 500;
         margin: 2rem;
+    }
+    .ibetojr-content {
+        padding: 0 4rem;
+        line-height: 2rem;
+        font-size: 1rem;
+        text-align: center;
     }
     /* sponsor */
     .sponsor {
@@ -1303,7 +1340,7 @@ nav.closed footer button {
         height: auto;
         width: 40%;
     }
-    .ieee{
+    .ieee {
         margin-left: 0 !important;
     }
     /* contact */
@@ -1345,6 +1382,12 @@ nav.closed footer button {
     }
     .rewards-container {
         margin: 0 4rem;
+    }
+    .ibetojr-content {
+        padding: 0 2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+        text-align: center;
     }
     .contact-cards {
         width: 30rem;
@@ -1430,11 +1473,6 @@ nav.closed footer button {
     color: white;
 }
 
-#special-icon {
-    /* height: 50px; */
-    /* width: 42px; */
-}
-
 .footerExcel img {
     justify-self: center;
     align-self: center;
@@ -1451,7 +1489,7 @@ nav.closed footer button {
     .Excelbrand-text {
         margin-left: 0;
     }
-    .Excelbrand span{
+    .Excelbrand span {
         font-size: 14px !important;
     }
 }
@@ -1469,8 +1507,14 @@ nav.closed footer button {
     }
 }
 
-@media only screen and (max-width:640px){
+@media only screen and (max-width:640px) {
     .contact-cards {
-    background: radial-gradient(circle at 120% 240%,white 80%,rgb(64, 125, 225) 0%);
+        background: radial-gradient(circle at 120% 240%, white 80%, rgb(64, 125, 225) 0%);
+    }
+    .ibetojr-content {
+        padding: 0 2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+        text-align: center;
     }
 }
